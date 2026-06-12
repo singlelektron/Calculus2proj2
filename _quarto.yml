@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "The Bernoulli Family: A Mathematical Legacy"
+  author: "Stories of Brilliance"
+  date: today
+  chapters:
+    - index.qmd
+    - chapters/chapter1.qmd
+    - chapters/chapter2.qmd
+    - chapters/chapter3.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    number-sections: true
+
+execute:
+  freeze: auto

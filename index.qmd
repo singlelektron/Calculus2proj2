@@ -1,0 +1,31 @@
+# The Bernoulli Family: A Mathematical Legacy
+
+## Introduction
+
+The Bernoulli family stands as one of the most prolific mathematical dynasties in history. From the late 17th century through the 18th century, this Swiss family produced numerous mathematicians, physicists, and scholars who fundamentally shaped modern mathematics and science.
+
+This story chronicles the lives, achievements, and interconnections of the Bernoulli family members—from Jacob Bernoulli's groundbreaking work on infinite series and probability, to Daniel Bernoulli's contributions to fluid dynamics, and beyond.
+
+### Historical Context
+
+The Bernoulli family originated in the Netherlands but established themselves in Basel, Switzerland, where they became prominent merchants and scholars. What began as a merchant enterprise transformed into an intellectual powerhouse that would influence mathematical thought for centuries to come.
+
+### Key Figures
+
+- **Jacob Bernoulli** (1654–1705): Pioneer of calculus and probability theory
+- **Johann Bernoulli** (1667–1748): Innovator in calculus and mechanics
+- **Daniel Bernoulli** (1700–1782): Developer of fluid dynamics and probability applications
+- **Nicolaus I Bernoulli** (1687–1759): Contributor to differential equations
+- **Leonhard Euler**: Protégé mentored by the Bernoullis, became one of history's greatest mathematicians
+
+### The Mathematical Legacy
+
+The Bernoulli family contributed to nearly every major area of mathematics developed during their time:
+
+- Calculus and analysis
+- Probability theory and statistics
+- Differential equations
+- Mechanics and physics
+- Optimization problems
+
+This book explores their contributions through interconnected narratives, revealing how mathematical ideas were born, refined, and passed down through generations.
