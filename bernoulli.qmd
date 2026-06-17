@@ -59,6 +59,7 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 ---
  
 <a id="jacob-bernoulli-1654-1705"></a>
+
 ## Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability
 
 ### Early Life
@@ -82,6 +83,7 @@ This result laid the foundation for modern statistics and probabilistic reasonin
 ---
 
 <a id="johann-bernoulli-1667-1748"></a>
+
 ## Johann Bernoulli (1667–1748): The Great Teacher of Calculus
 
 ### Rival and Successor
@@ -114,6 +116,7 @@ Perhaps Johann's greatest legacy was teaching the young Leonhard Euler. Under Jo
 ---
 
 <a id="daniel-bernoulli-1700-1782"></a>
+
 ## Daniel Bernoulli (1700–1782): Mathematics Meets Physics
 
 ### Early Life
@@ -146,9 +149,9 @@ One of the family's most enduring mathematical legacies is the sequence known as
 
 These numbers first appeared in Jacob Bernoulli's investigation of sums of powers:
 
-[
+$$
 1^k + 2^k + \cdots + n^k.
-]
+$$
 
 Bernoulli discovered formulas that expressed these sums in a systematic way, introducing numbers that now bear his name.
 

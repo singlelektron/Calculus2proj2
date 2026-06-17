@@ -8,11 +8,11 @@ website:
     left:
       - href: bernoulli.qmd
         text: Home
-      - href: chapters/chapter1.qmd
+      - href: bernoulli.qmd#jacob-bernoulli-1654-1705
         text: Jacob
-      - href: chapters/chapter2.qmd
+      - href: bernoulli.qmd#johann-bernoulli-1667-1748
         text: Johann
-      - href: chapters/chapter3.qmd
+      - href: bernoulli.qmd#daniel-bernoulli-1700-1782
         text: Daniel
 
 format:

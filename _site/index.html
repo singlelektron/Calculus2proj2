@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -99,15 +128,15 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./chapters/chapter1.html"> 
+    <a class="nav-link" href="./index.html#jacob-bernoulli-1654-1705"> 
 <span class="menu-text">Jacob</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./chapters/chapter2.html"> 
+    <a class="nav-link" href="./index.html#johann-bernoulli-1667-1748"> 
 <span class="menu-text">Johann</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./chapters/chapter3.html"> 
+    <a class="nav-link" href="./index.html#daniel-bernoulli-1700-1782"> 
 <span class="menu-text">Daniel</span></a>
   </li>  
 </ul>
@@ -131,11 +160,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
   <li><a href="#origins-of-the-bernoulli-family" id="toc-origins-of-the-bernoulli-family" class="nav-link" data-scroll-target="#origins-of-the-bernoulli-family"><span class="header-section-number">1.2</span> Origins of the Bernoulli Family</a></li>
   <li><a href="#the-bernoulli-family-tree-of-mathematicians" id="toc-the-bernoulli-family-tree-of-mathematicians" class="nav-link" data-scroll-target="#the-bernoulli-family-tree-of-mathematicians"><span class="header-section-number">1.3</span> The Bernoulli Family Tree of Mathematicians</a></li>
-  <li><a href="#the-bernoulli-numbers" id="toc-the-bernoulli-numbers" class="nav-link" data-scroll-target="#the-bernoulli-numbers"><span class="header-section-number">1.4</span> The Bernoulli Numbers</a></li>
-  <li><a href="#family-rivalries-and-competition" id="toc-family-rivalries-and-competition" class="nav-link" data-scroll-target="#family-rivalries-and-competition"><span class="header-section-number">1.5</span> Family Rivalries and Competition</a></li>
-  <li><a href="#influence-on-modern-calculus" id="toc-influence-on-modern-calculus" class="nav-link" data-scroll-target="#influence-on-modern-calculus"><span class="header-section-number">1.6</span> Influence on Modern Calculus</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.7</span> Conclusion</a></li>
-  <li><a href="#the-full-bernoulli-family-tree" id="toc-the-full-bernoulli-family-tree" class="nav-link" data-scroll-target="#the-full-bernoulli-family-tree"><span class="header-section-number">1.8</span> The full Bernoulli Family Tree</a></li>
+  <li><a href="#jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" id="toc-jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" class="nav-link" data-scroll-target="#jacob-bernoulli-16541705-pioneer-of-calculus-and-probability"><span class="header-section-number">1.4</span> Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</a></li>
+  <li><a href="#johann-bernoulli-16671748-the-great-teacher-of-calculus" id="toc-johann-bernoulli-16671748-the-great-teacher-of-calculus" class="nav-link" data-scroll-target="#johann-bernoulli-16671748-the-great-teacher-of-calculus"><span class="header-section-number">1.5</span> Johann Bernoulli (1667–1748): The Great Teacher of Calculus</a></li>
+  <li><a href="#daniel-bernoulli-17001782-mathematics-meets-physics" id="toc-daniel-bernoulli-17001782-mathematics-meets-physics" class="nav-link" data-scroll-target="#daniel-bernoulli-17001782-mathematics-meets-physics"><span class="header-section-number">1.6</span> Daniel Bernoulli (1700–1782): Mathematics Meets Physics</a></li>
+  <li><a href="#the-bernoulli-numbers" id="toc-the-bernoulli-numbers" class="nav-link" data-scroll-target="#the-bernoulli-numbers"><span class="header-section-number">1.7</span> The Bernoulli Numbers</a></li>
+  <li><a href="#family-rivalries-and-competition" id="toc-family-rivalries-and-competition" class="nav-link" data-scroll-target="#family-rivalries-and-competition"><span class="header-section-number">1.8</span> Family Rivalries and Competition</a></li>
+  <li><a href="#influence-on-modern-calculus" id="toc-influence-on-modern-calculus" class="nav-link" data-scroll-target="#influence-on-modern-calculus"><span class="header-section-number">1.9</span> Influence on Modern Calculus</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.10</span> Conclusion</a></li>
+  <li><a href="#the-full-bernoulli-family-tree" id="toc-the-full-bernoulli-family-tree" class="nav-link" data-scroll-target="#the-full-bernoulli-family-tree"><span class="header-section-number">1.11</span> The full Bernoulli Family Tree</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -222,30 +254,36 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 </div>
 </div>
 <hr>
-<p><a id="jacob-bernoulli-1654-1705"></a> ## Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</p>
-<section id="early-life" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="early-life"><span class="header-section-number">1.3.1</span> Early Life</h3>
+<p><a id="jacob-bernoulli-1654-1705"></a></p>
+</section>
+<section id="jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="jacob-bernoulli-16541705-pioneer-of-calculus-and-probability"><span class="header-section-number">1.4</span> Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</h2>
+<section id="early-life" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="early-life"><span class="header-section-number">1.4.1</span> Early Life</h3>
 <p>Jacob Bernoulli was initially expected to study theology, following his family’s wishes. However, he secretly pursued mathematics and astronomy. After learning the newly developed calculus of Leibniz, he quickly became one of its leading advocates.</p>
 </section>
-<section id="contributions-to-calculus" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="contributions-to-calculus"><span class="header-section-number">1.3.2</span> Contributions to Calculus</h3>
+<section id="contributions-to-calculus" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="contributions-to-calculus"><span class="header-section-number">1.4.2</span> Contributions to Calculus</h3>
 <p>Jacob was among the first mathematicians to understand the potential of Leibniz’s methods. He applied calculus to solve problems involving curves, motion, and geometry.</p>
 <p>One of his most famous achievements was his study of the logarithmic spiral, a curve that fascinated him because it preserved its shape under scaling. He admired the curve so much that he requested it be engraved on his tombstone.</p>
 <p>Jacob also contributed significantly to the theory of infinite series and differential equations. His investigations helped demonstrate the power of calculus for solving complex mathematical problems.</p>
 </section>
-<section id="birth-of-probability-theory" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="birth-of-probability-theory"><span class="header-section-number">1.3.3</span> Birth of Probability Theory</h3>
+<section id="birth-of-probability-theory" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="birth-of-probability-theory"><span class="header-section-number">1.4.3</span> Birth of Probability Theory</h3>
 <p>Jacob’s posthumously published book <em>Ars Conjectandi</em> (1713) became a foundational text in probability theory. In this work, he established what is now known as the Law of Large Numbers, showing that the observed frequency of an event approaches its theoretical probability as the number of trials increases.</p>
 <p>This result laid the foundation for modern statistics and probabilistic reasoning.</p>
 <hr>
-<p><a id="johann-bernoulli-1667-1748"></a> ## Johann Bernoulli (1667–1748): The Great Teacher of Calculus</p>
+<p><a id="johann-bernoulli-1667-1748"></a></p>
 </section>
-<section id="rival-and-successor" class="level3" data-number="1.3.4">
-<h3 data-number="1.3.4" class="anchored" data-anchor-id="rival-and-successor"><span class="header-section-number">1.3.4</span> Rival and Successor</h3>
+</section>
+<section id="johann-bernoulli-16671748-the-great-teacher-of-calculus" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="johann-bernoulli-16671748-the-great-teacher-of-calculus"><span class="header-section-number">1.5</span> Johann Bernoulli (1667–1748): The Great Teacher of Calculus</h2>
+<section id="rival-and-successor" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="rival-and-successor"><span class="header-section-number">1.5.1</span> Rival and Successor</h3>
 <p>Johann Bernoulli, Jacob’s younger brother, learned mathematics largely from Jacob. He soon became a brilliant mathematician in his own right. Their relationship, however, became increasingly competitive, leading to famous disputes over priority and recognition.</p>
 </section>
-<section id="promotion-of-leibnizian-calculus" class="level3" data-number="1.3.5">
-<h3 data-number="1.3.5" class="anchored" data-anchor-id="promotion-of-leibnizian-calculus"><span class="header-section-number">1.3.5</span> Promotion of Leibnizian Calculus</h3>
+<section id="promotion-of-leibnizian-calculus" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="promotion-of-leibnizian-calculus"><span class="header-section-number">1.5.2</span> Promotion of Leibnizian Calculus</h3>
 <p>Johann played a major role in spreading Leibniz’s notation and methods throughout Europe. His lectures and publications helped establish the notation still used today, including symbols such as:</p>
 <ul>
 <li>( ) for integration</li>
@@ -253,8 +291,8 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 </ul>
 <p>Through his teaching, Johann influenced an entire generation of mathematicians.</p>
 </section>
-<section id="the-brachistochrone-problem" class="level3" data-number="1.3.6">
-<h3 data-number="1.3.6" class="anchored" data-anchor-id="the-brachistochrone-problem"><span class="header-section-number">1.3.6</span> The Brachistochrone Problem</h3>
+<section id="the-brachistochrone-problem" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="the-brachistochrone-problem"><span class="header-section-number">1.5.3</span> The Brachistochrone Problem</h3>
 <p>In 1696 Johann proposed the famous Brachistochrone Problem:</p>
 <blockquote class="blockquote">
 <p>Given two points at different heights, what path allows a particle to travel between them in the shortest time under gravity?</p>
@@ -262,40 +300,45 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 <p>The challenge attracted solutions from leading mathematicians across Europe, including Newton and Leibniz.</p>
 <p>The solution was a cycloid, not a straight line. This problem became one of the earliest and most important applications of calculus of variations, a field that later influenced mechanics, physics, and optimization theory.</p>
 </section>
-<section id="mentor-to-euler" class="level3" data-number="1.3.7">
-<h3 data-number="1.3.7" class="anchored" data-anchor-id="mentor-to-euler"><span class="header-section-number">1.3.7</span> Mentor to Euler</h3>
+<section id="mentor-to-euler" class="level3" data-number="1.5.4">
+<h3 data-number="1.5.4" class="anchored" data-anchor-id="mentor-to-euler"><span class="header-section-number">1.5.4</span> Mentor to Euler</h3>
 <p>Perhaps Johann’s greatest legacy was teaching the young Leonhard Euler. Under Johann’s guidance, Euler developed into one of the greatest mathematicians in history and further expanded many ideas originating from the Bernoulli family.</p>
 <hr>
-<p><a id="daniel-bernoulli-1700-1782"></a> ## Daniel Bernoulli (1700–1782): Mathematics Meets Physics</p>
+<p><a id="daniel-bernoulli-1700-1782"></a></p>
 </section>
-<section id="early-life-1" class="level3" data-number="1.3.8">
-<h3 data-number="1.3.8" class="anchored" data-anchor-id="early-life-1"><span class="header-section-number">1.3.8</span> Early Life</h3>
+</section>
+<section id="daniel-bernoulli-17001782-mathematics-meets-physics" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="daniel-bernoulli-17001782-mathematics-meets-physics"><span class="header-section-number">1.6</span> Daniel Bernoulli (1700–1782): Mathematics Meets Physics</h2>
+<section id="early-life-1" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="early-life-1"><span class="header-section-number">1.6.1</span> Early Life</h3>
 <p>Daniel Bernoulli was Johann’s son and one of the most talented members of the family. Although trained in medicine, his passion remained mathematics and natural philosophy.</p>
 </section>
-<section id="bernoullis-principle" class="level3" data-number="1.3.9">
-<h3 data-number="1.3.9" class="anchored" data-anchor-id="bernoullis-principle"><span class="header-section-number">1.3.9</span> Bernoulli’s Principle</h3>
+<section id="bernoullis-principle" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="bernoullis-principle"><span class="header-section-number">1.6.2</span> Bernoulli’s Principle</h3>
 <p>Daniel is best known for his work in fluid dynamics. In his book <em>Hydrodynamica</em> (1738), he established what is now called Bernoulli’s Principle:</p>
 <blockquote class="blockquote">
 <p>As the speed of a fluid increases, its pressure decreases.</p>
 </blockquote>
 <p>This principle explains many physical phenomena, including the lift generated by airplane wings and the operation of various engineering devices.</p>
 </section>
-<section id="differential-equations-and-mathematical-physics" class="level3" data-number="1.3.10">
-<h3 data-number="1.3.10" class="anchored" data-anchor-id="differential-equations-and-mathematical-physics"><span class="header-section-number">1.3.10</span> Differential Equations and Mathematical Physics</h3>
+<section id="differential-equations-and-mathematical-physics" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="differential-equations-and-mathematical-physics"><span class="header-section-number">1.6.3</span> Differential Equations and Mathematical Physics</h3>
 <p>Daniel extensively used calculus to model physical systems. His work helped demonstrate how differential equations could describe real-world phenomena such as fluid flow, vibration, and motion.</p>
 <p>This represented an important shift in mathematics: calculus was no longer merely a tool for solving abstract problems but became a language for understanding nature itself.</p>
 </section>
-<section id="contributions-to-probability" class="level3" data-number="1.3.11">
-<h3 data-number="1.3.11" class="anchored" data-anchor-id="contributions-to-probability"><span class="header-section-number">1.3.11</span> Contributions to Probability</h3>
+<section id="contributions-to-probability" class="level3" data-number="1.6.4">
+<h3 data-number="1.6.4" class="anchored" data-anchor-id="contributions-to-probability"><span class="header-section-number">1.6.4</span> Contributions to Probability</h3>
 <p>Daniel also studied probability and economics. His analysis of decision-making under uncertainty led to the concept of expected utility, which remains influential in economics and behavioral science today.</p>
 <hr>
 </section>
 </section>
-<section id="the-bernoulli-numbers" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="the-bernoulli-numbers"><span class="header-section-number">1.4</span> The Bernoulli Numbers</h2>
+<section id="the-bernoulli-numbers" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="the-bernoulli-numbers"><span class="header-section-number">1.7</span> The Bernoulli Numbers</h2>
 <p>One of the family’s most enduring mathematical legacies is the sequence known as the Bernoulli Numbers.</p>
 <p>These numbers first appeared in Jacob Bernoulli’s investigation of sums of powers:</p>
-<p>[ 1^k + 2^k + + n^k.]</p>
+<p><span class="math display">\[
+1^k + 2^k + \cdots + n^k.
+\]</span></p>
 <p>Bernoulli discovered formulas that expressed these sums in a systematic way, introducing numbers that now bear his name.</p>
 <p>Today, Bernoulli numbers appear in:</p>
 <ul>
@@ -308,16 +351,16 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 <p>Their continued importance demonstrates the lasting impact of Bernoulli’s work on modern mathematics.</p>
 <hr>
 </section>
-<section id="family-rivalries-and-competition" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="family-rivalries-and-competition"><span class="header-section-number">1.5</span> Family Rivalries and Competition</h2>
+<section id="family-rivalries-and-competition" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="family-rivalries-and-competition"><span class="header-section-number">1.8</span> Family Rivalries and Competition</h2>
 <p>The Bernoulli family was famous not only for its mathematical achievements but also for its intense rivalries.</p>
 <p>Jacob and Johann frequently argued over priority for discoveries. After Jacob’s death, Johann continued many of the disputes publicly.</p>
 <p>Later, Johann became jealous of the success of his son Daniel. When Daniel won a scientific prize jointly with him, Johann reportedly became so upset that he refused to speak to his son for some time.</p>
 <p>These conflicts reveal the highly competitive environment in which mathematical discoveries were made during the eighteenth century.</p>
 <hr>
 </section>
-<section id="influence-on-modern-calculus" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="influence-on-modern-calculus"><span class="header-section-number">1.6</span> Influence on Modern Calculus</h2>
+<section id="influence-on-modern-calculus" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="influence-on-modern-calculus"><span class="header-section-number">1.9</span> Influence on Modern Calculus</h2>
 <p>The Bernoulli family helped transform calculus from a new invention into a mature mathematical discipline.</p>
 <p>Their contributions include:</p>
 <ul>
@@ -332,13 +375,13 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 <p>Many concepts studied in modern calculus courses trace their origins directly to the work of the Bernoullis.</p>
 <hr>
 </section>
-<section id="conclusion" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.7</span> Conclusion</h2>
+<section id="conclusion" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.10</span> Conclusion</h2>
 <p>The Bernoulli family occupies a unique place in the history of mathematics. Across three generations, they produced pioneering research that shaped calculus, probability, differential equations, and mathematical physics. Jacob Bernoulli advanced the foundations of probability and series, Johann Bernoulli spread and expanded calculus throughout Europe, and Daniel Bernoulli demonstrated the power of mathematics in understanding the physical world.</p>
 <p>Their collective achievements influenced mathematicians such as Euler and contributed significantly to the development of modern science. More than three centuries later, concepts bearing the Bernoulli name remain central to mathematics, engineering, economics, and physics. The story of the Bernoulli family is therefore not merely a family history but an important chapter in the evolution of calculus itself.</p>
 </section>
-<section id="the-full-bernoulli-family-tree" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="the-full-bernoulli-family-tree"><span class="header-section-number">1.8</span> The full Bernoulli Family Tree</h2>
+<section id="the-full-bernoulli-family-tree" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="the-full-bernoulli-family-tree"><span class="header-section-number">1.11</span> The full Bernoulli Family Tree</h2>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
