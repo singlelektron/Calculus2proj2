@@ -12,8 +12,12 @@ website:
         text: Jacob
       - href: bernoulli.qmd#johann-bernoulli-1667-1748
         text: Johann
+      - href: bernoulli.qmd#nicolaus-i-bernoulli-1687-1759
+        text: Nicolaus I
       - href: bernoulli.qmd#daniel-bernoulli-1700-1782
         text: Daniel
+      - href: bernoulli.qmd#leonhard-euler-1707-1783
+        text: Euler
 
 format:
   html:
