@@ -1,16 +1,19 @@
 project:
-  type: book
-  output-dir: _book
+  type: website
+  output-dir: _site
 
-book:
+website:
   title: "The Bernoulli Family: A Mathematical Legacy"
-  author: "Stories of Brilliance"
-  date: today
-  chapters:
-    - index.qmd
-    - chapters/chapter1.qmd
-    - chapters/chapter2.qmd
-    - chapters/chapter3.qmd
+  navbar:
+    left:
+      - href: bernoulli.qmd
+        text: Home
+      - href: chapters/chapter1.qmd
+        text: Jacob
+      - href: chapters/chapter2.qmd
+        text: Johann
+      - href: chapters/chapter3.qmd
+        text: Daniel
 
 format:
   html:

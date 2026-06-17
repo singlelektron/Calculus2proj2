@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Bernoulli Family: A Mathematical Legacy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e4440d1c3a35a87957e58d7f75235ffc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Bernoulli Family: A Mathematical Legacy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chapters/chapter1.html"> 
+<span class="menu-text">Jacob</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chapters/chapter2.html"> 
+<span class="menu-text">Johann</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chapters/chapter3.html"> 
+<span class="menu-text">Daniel</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-bernoulli-family-a-dynasty-that-shaped-the-development-of-calculus" id="toc-the-bernoulli-family-a-dynasty-that-shaped-the-development-of-calculus" class="nav-link active" data-scroll-target="#the-bernoulli-family-a-dynasty-that-shaped-the-development-of-calculus"><span class="header-section-number">1</span> The Bernoulli Family: A Dynasty that Shaped the Development of Calculus</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
+  <li><a href="#origins-of-the-bernoulli-family" id="toc-origins-of-the-bernoulli-family" class="nav-link" data-scroll-target="#origins-of-the-bernoulli-family"><span class="header-section-number">1.2</span> Origins of the Bernoulli Family</a></li>
+  <li><a href="#the-bernoulli-family-tree-of-mathematicians" id="toc-the-bernoulli-family-tree-of-mathematicians" class="nav-link" data-scroll-target="#the-bernoulli-family-tree-of-mathematicians"><span class="header-section-number">1.3</span> The Bernoulli Family Tree of Mathematicians</a></li>
+  <li><a href="#the-bernoulli-numbers" id="toc-the-bernoulli-numbers" class="nav-link" data-scroll-target="#the-bernoulli-numbers"><span class="header-section-number">1.4</span> The Bernoulli Numbers</a></li>
+  <li><a href="#family-rivalries-and-competition" id="toc-family-rivalries-and-competition" class="nav-link" data-scroll-target="#family-rivalries-and-competition"><span class="header-section-number">1.5</span> Family Rivalries and Competition</a></li>
+  <li><a href="#influence-on-modern-calculus" id="toc-influence-on-modern-calculus" class="nav-link" data-scroll-target="#influence-on-modern-calculus"><span class="header-section-number">1.6</span> Influence on Modern Calculus</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.7</span> Conclusion</a></li>
+  <li><a href="#the-full-bernoulli-family-tree" id="toc-the-full-bernoulli-family-tree" class="nav-link" data-scroll-target="#the-full-bernoulli-family-tree"><span class="header-section-number">1.8</span> The full Bernoulli Family Tree</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Bernoulli Family: A Mathematical Legacy</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-bernoulli-family-a-dynasty-that-shaped-the-development-of-calculus" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> The Bernoulli Family: A Dynasty that Shaped the Development of Calculus</h1>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>The history of calculus is often associated with Isaac Newton and Gottfried Wilhelm Leibniz, who independently developed the fundamental ideas of differential and integral calculus during the seventeenth century. However, the growth of calculus into a powerful mathematical discipline was largely driven by later mathematicians who expanded, applied, and refined these ideas. Among these contributors, no family had a greater influence than the Bernoulli family.</p>
+<p>Originating from Basel, Switzerland, the Bernoullis produced several generations of mathematicians whose work transformed calculus from a new mathematical technique into an essential tool for science and engineering. Their contributions ranged from differential equations and infinite series to probability theory and mathematical physics. The family’s influence extended for more than a century and played a crucial role in establishing many areas of modern mathematics.</p>
+<hr>
+</section>
+<section id="origins-of-the-bernoulli-family" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="origins-of-the-bernoulli-family"><span class="header-section-number">1.2</span> Origins of the Bernoulli Family</h2>
+<p>The Bernoulli family was originally of Flemish origin. Due to religious persecution, they migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business and public service, several became distinguished mathematicians.</p>
+<p>The most influential members of the mathematical branch of the family were:</p>
+<ul>
+<li>Jacob Bernoulli (1654–1705)</li>
+<li>Johann Bernoulli (1667–1748)</li>
+<li>Daniel Bernoulli (1700–1782)</li>
+<li>Nicolaus Bernoulli I (1687–1759)</li>
+<li>Nicolaus Bernoulli II (1695–1726)</li>
+</ul>
+<p>Together, they established one of the most productive mathematical dynasties in history.</p>
+<p>The following is their Family tree of the Basler Bernoullis:</p>
+</section>
+<section id="the-bernoulli-family-tree-of-mathematicians" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-bernoulli-family-tree-of-mathematicians"><span class="header-section-number">1.3</span> The Bernoulli Family Tree of Mathematicians</h2>
+<p>This includes the family members who made significant contributions to mathematics. You can click the box of the name to access the story of the mathematician if he’s mentioned below. The full famlity tree is given at the end of the website.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+
+N["Niklaus Bernoulli (1623–1708)"]
+
+N --&gt; J1["Jakob I Bernoulli (1654–1705)"]
+N --&gt; N0["Nikolaus Bernoulli (1662–1716)"]
+N --&gt; J2["Johann I Bernoulli (1667–1748)"]
+N --&gt; H0["Hieronymus Bernoulli (1669–1760)"]
+
+N0 --&gt; NI["Nikolaus I Bernoulli (1687–1759)"]
+
+J2 --&gt; NII["Nikolaus II Bernoulli (1695–1726)"]
+J2 --&gt; D["Daniel Bernoulli (1700–1782)"]
+J2 --&gt; JII["Johann II Bernoulli (1710–1790)"]
+
+JII --&gt; JIII["Johann III Bernoulli (1744–1807)"]
+JII --&gt; DII["Daniel II Bernoulli (1751–1834)"]
+JII --&gt; NIII["Nikolaus III Bernoulli (1754–1841)"]
+JII --&gt; JAC2["Jakob II Bernoulli (1759–1789)"]
+
+click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click J2 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
+click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+<p><a id="jacob-bernoulli-1654-1705"></a> ## Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</p>
+<section id="early-life" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="early-life"><span class="header-section-number">1.3.1</span> Early Life</h3>
+<p>Jacob Bernoulli was initially expected to study theology, following his family’s wishes. However, he secretly pursued mathematics and astronomy. After learning the newly developed calculus of Leibniz, he quickly became one of its leading advocates.</p>
+</section>
+<section id="contributions-to-calculus" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="contributions-to-calculus"><span class="header-section-number">1.3.2</span> Contributions to Calculus</h3>
+<p>Jacob was among the first mathematicians to understand the potential of Leibniz’s methods. He applied calculus to solve problems involving curves, motion, and geometry.</p>
+<p>One of his most famous achievements was his study of the logarithmic spiral, a curve that fascinated him because it preserved its shape under scaling. He admired the curve so much that he requested it be engraved on his tombstone.</p>
+<p>Jacob also contributed significantly to the theory of infinite series and differential equations. His investigations helped demonstrate the power of calculus for solving complex mathematical problems.</p>
+</section>
+<section id="birth-of-probability-theory" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="birth-of-probability-theory"><span class="header-section-number">1.3.3</span> Birth of Probability Theory</h3>
+<p>Jacob’s posthumously published book <em>Ars Conjectandi</em> (1713) became a foundational text in probability theory. In this work, he established what is now known as the Law of Large Numbers, showing that the observed frequency of an event approaches its theoretical probability as the number of trials increases.</p>
+<p>This result laid the foundation for modern statistics and probabilistic reasoning.</p>
+<hr>
+<p><a id="johann-bernoulli-1667-1748"></a> ## Johann Bernoulli (1667–1748): The Great Teacher of Calculus</p>
+</section>
+<section id="rival-and-successor" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="rival-and-successor"><span class="header-section-number">1.3.4</span> Rival and Successor</h3>
+<p>Johann Bernoulli, Jacob’s younger brother, learned mathematics largely from Jacob. He soon became a brilliant mathematician in his own right. Their relationship, however, became increasingly competitive, leading to famous disputes over priority and recognition.</p>
+</section>
+<section id="promotion-of-leibnizian-calculus" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="promotion-of-leibnizian-calculus"><span class="header-section-number">1.3.5</span> Promotion of Leibnizian Calculus</h3>
+<p>Johann played a major role in spreading Leibniz’s notation and methods throughout Europe. His lectures and publications helped establish the notation still used today, including symbols such as:</p>
+<ul>
+<li>( ) for integration</li>
+<li>( d ) for differentiation</li>
+</ul>
+<p>Through his teaching, Johann influenced an entire generation of mathematicians.</p>
+</section>
+<section id="the-brachistochrone-problem" class="level3" data-number="1.3.6">
+<h3 data-number="1.3.6" class="anchored" data-anchor-id="the-brachistochrone-problem"><span class="header-section-number">1.3.6</span> The Brachistochrone Problem</h3>
+<p>In 1696 Johann proposed the famous Brachistochrone Problem:</p>
+<blockquote class="blockquote">
+<p>Given two points at different heights, what path allows a particle to travel between them in the shortest time under gravity?</p>
+</blockquote>
+<p>The challenge attracted solutions from leading mathematicians across Europe, including Newton and Leibniz.</p>
+<p>The solution was a cycloid, not a straight line. This problem became one of the earliest and most important applications of calculus of variations, a field that later influenced mechanics, physics, and optimization theory.</p>
+</section>
+<section id="mentor-to-euler" class="level3" data-number="1.3.7">
+<h3 data-number="1.3.7" class="anchored" data-anchor-id="mentor-to-euler"><span class="header-section-number">1.3.7</span> Mentor to Euler</h3>
+<p>Perhaps Johann’s greatest legacy was teaching the young Leonhard Euler. Under Johann’s guidance, Euler developed into one of the greatest mathematicians in history and further expanded many ideas originating from the Bernoulli family.</p>
+<hr>
+<p><a id="daniel-bernoulli-1700-1782"></a> ## Daniel Bernoulli (1700–1782): Mathematics Meets Physics</p>
+</section>
+<section id="early-life-1" class="level3" data-number="1.3.8">
+<h3 data-number="1.3.8" class="anchored" data-anchor-id="early-life-1"><span class="header-section-number">1.3.8</span> Early Life</h3>
+<p>Daniel Bernoulli was Johann’s son and one of the most talented members of the family. Although trained in medicine, his passion remained mathematics and natural philosophy.</p>
+</section>
+<section id="bernoullis-principle" class="level3" data-number="1.3.9">
+<h3 data-number="1.3.9" class="anchored" data-anchor-id="bernoullis-principle"><span class="header-section-number">1.3.9</span> Bernoulli’s Principle</h3>
+<p>Daniel is best known for his work in fluid dynamics. In his book <em>Hydrodynamica</em> (1738), he established what is now called Bernoulli’s Principle:</p>
+<blockquote class="blockquote">
+<p>As the speed of a fluid increases, its pressure decreases.</p>
+</blockquote>
+<p>This principle explains many physical phenomena, including the lift generated by airplane wings and the operation of various engineering devices.</p>
+</section>
+<section id="differential-equations-and-mathematical-physics" class="level3" data-number="1.3.10">
+<h3 data-number="1.3.10" class="anchored" data-anchor-id="differential-equations-and-mathematical-physics"><span class="header-section-number">1.3.10</span> Differential Equations and Mathematical Physics</h3>
+<p>Daniel extensively used calculus to model physical systems. His work helped demonstrate how differential equations could describe real-world phenomena such as fluid flow, vibration, and motion.</p>
+<p>This represented an important shift in mathematics: calculus was no longer merely a tool for solving abstract problems but became a language for understanding nature itself.</p>
+</section>
+<section id="contributions-to-probability" class="level3" data-number="1.3.11">
+<h3 data-number="1.3.11" class="anchored" data-anchor-id="contributions-to-probability"><span class="header-section-number">1.3.11</span> Contributions to Probability</h3>
+<p>Daniel also studied probability and economics. His analysis of decision-making under uncertainty led to the concept of expected utility, which remains influential in economics and behavioral science today.</p>
+<hr>
+</section>
+</section>
+<section id="the-bernoulli-numbers" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="the-bernoulli-numbers"><span class="header-section-number">1.4</span> The Bernoulli Numbers</h2>
+<p>One of the family’s most enduring mathematical legacies is the sequence known as the Bernoulli Numbers.</p>
+<p>These numbers first appeared in Jacob Bernoulli’s investigation of sums of powers:</p>
+<p>[ 1^k + 2^k + + n^k.]</p>
+<p>Bernoulli discovered formulas that expressed these sums in a systematic way, introducing numbers that now bear his name.</p>
+<p>Today, Bernoulli numbers appear in:</p>
+<ul>
+<li>Number theory</li>
+<li>Infinite series</li>
+<li>Numerical analysis</li>
+<li>The Euler–Maclaurin formula</li>
+<li>The Riemann zeta function</li>
+</ul>
+<p>Their continued importance demonstrates the lasting impact of Bernoulli’s work on modern mathematics.</p>
+<hr>
+</section>
+<section id="family-rivalries-and-competition" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="family-rivalries-and-competition"><span class="header-section-number">1.5</span> Family Rivalries and Competition</h2>
+<p>The Bernoulli family was famous not only for its mathematical achievements but also for its intense rivalries.</p>
+<p>Jacob and Johann frequently argued over priority for discoveries. After Jacob’s death, Johann continued many of the disputes publicly.</p>
+<p>Later, Johann became jealous of the success of his son Daniel. When Daniel won a scientific prize jointly with him, Johann reportedly became so upset that he refused to speak to his son for some time.</p>
+<p>These conflicts reveal the highly competitive environment in which mathematical discoveries were made during the eighteenth century.</p>
+<hr>
+</section>
+<section id="influence-on-modern-calculus" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="influence-on-modern-calculus"><span class="header-section-number">1.6</span> Influence on Modern Calculus</h2>
+<p>The Bernoulli family helped transform calculus from a new invention into a mature mathematical discipline.</p>
+<p>Their contributions include:</p>
+<ul>
+<li>Development of differential equations</li>
+<li>Applications of calculus to mechanics</li>
+<li>Foundations of probability theory</li>
+<li>Creation of the calculus of variations</li>
+<li>Advancement of infinite series</li>
+<li>Promotion of Leibnizian notation</li>
+<li>Mathematical modeling of physical phenomena</li>
+</ul>
+<p>Many concepts studied in modern calculus courses trace their origins directly to the work of the Bernoullis.</p>
+<hr>
+</section>
+<section id="conclusion" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.7</span> Conclusion</h2>
+<p>The Bernoulli family occupies a unique place in the history of mathematics. Across three generations, they produced pioneering research that shaped calculus, probability, differential equations, and mathematical physics. Jacob Bernoulli advanced the foundations of probability and series, Johann Bernoulli spread and expanded calculus throughout Europe, and Daniel Bernoulli demonstrated the power of mathematics in understanding the physical world.</p>
+<p>Their collective achievements influenced mathematicians such as Euler and contributed significantly to the development of modern science. More than three centuries later, concepts bearing the Bernoulli name remain central to mathematics, engineering, economics, and physics. The story of the Bernoulli family is therefore not merely a family history but an important chapter in the evolution of calculus itself.</p>
+</section>
+<section id="the-full-bernoulli-family-tree" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="the-full-bernoulli-family-tree"><span class="header-section-number">1.8</span> The full Bernoulli Family Tree</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+
+N["Niklaus Bernoulli (1623–1708)"]
+
+N --&gt; J1["Jakob I (1655–1705)"]
+N --&gt; N1["Nikolaus (1662–1716)"]
+N --&gt; Jo1["Johann I (1667–1748)"]
+N --&gt; H1["Hieronymus (1669–1760)"]
+
+N1 --&gt; NI["Nikolaus I (1687–1759)"]
+
+Jo1 --&gt; NII["Nikolaus II (1695–1726)"]
+Jo1 --&gt; D1["Daniel (1700–1782)"]
+Jo1 --&gt; J2["Johann II (1710–1790)"]
+
+H1 --&gt; F1["Franz (1705–1777)"]
+
+J2 --&gt; J3["Johann III (1744–1807)"]
+J2 --&gt; D2["Daniel II (1751–1834)"]
+J2 --&gt; N3["Nikolaus III (1754–1841)"]
+J2 --&gt; Ja2["Jakob II (1759–1789)"]
+
+F1 --&gt; H2["Hieronymus (1735–1786)"]
+
+J3 --&gt; C1["Christoph (1782–1863)"]
+J3 --&gt; Jos["Johannes (1785–1869)"]
+
+D2 --&gt; Leo1["Leonhard (1786–1852)"]
+D2 --&gt; L2["Leonhard (1791–1871)"]
+
+N3 --&gt; N4["Nikolaus (1793–1876)"]
+
+H2 --&gt; JJ1["Johann Jacob (1769–1853)"]
+
+C1 --&gt; Car1["Carl Christoph (1809–1884)"]
+
+Jos --&gt; Kar1["Carl Johann (1835–1906)"]
+
+Leo1 --&gt; Edu1["Eduard (1819–1899)"]
+
+L2 --&gt; Aug1["August (1839–1921)"]
+L2 --&gt; Fritz["Fritz (1824–1913)"]
+
+N4 --&gt; Theo["Theodor (1837–1909)"]
+
+JJ1 --&gt; JJ2["Johann Jacob (1802–1892)"]
+JJ1 --&gt; Franz2["Franz (1813–1850)"]
+
+Car1 --&gt; CaC["Carl Christoph (1861–1923)"]
+
+Kar1 --&gt; CaA["Carl Albrecht (1868–1937)"]
+
+Edu1 --&gt; Edu2["Eduard (1867–1927)"]
+
+Aug1 --&gt; AL["August Leonhard (1879–1939)"]
+Aug1 --&gt; Maria["Maria (1868–1963)"]
+
+Theo --&gt; Rud["Rudolf (1880–1948)"]
+
+JJ2 --&gt; JJ3["Johann Jakob (1831–1913)"]
+JJ2 --&gt; CaG["Carl Gustav (1834–1878)"]
+JJ2 --&gt; Ernst["Ernst (1846–1931)"]
+
+Franz2 --&gt; Eli["Elisabeth (1873–1935)"]
+Franz2 --&gt; Hans["Hans (1876–1959)"]
+
+CaC --&gt; Christoph["Christoph (1897–1981)"]
+CaA --&gt; Eva["Eva (1903–1995)"]
+JJ3 --&gt; Lucas["Lucas (1907–1976)"]
+Ernst --&gt; Eugen["Eugen (1882–1983)"]
+
+Lucas --&gt; Cornelia["Cornelia Bernoulli (b. 1954)"]
+
+click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click Jo1 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
+click D1 "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
