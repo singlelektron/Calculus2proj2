@@ -4,13 +4,97 @@
     "href": "index.html",
     "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
     "section": "",
-    "text": "NoteGroup Information\n\n\n\nGroup: Bernoulli Storytellers\nAuthors: Zhang Yang\n\n\n\n\nJacob Bernoulli"
+    "text": "NoteGroup Information\n\n\n\nGroup: Still Thinking\nAuthors:\n\nZhang Yang MAT2509036\nZhu Xinbo MAT2509040\nZhang Qixuan MAT2509034\n\n\n\n\n\nJacob Bernoulli"
+  },
+  {
+    "objectID": "index.html#origins-of-the-bernoulli-family",
+    "href": "index.html#origins-of-the-bernoulli-family",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "1.1 Origins of the Bernoulli Family",
+    "text": "1.1 Origins of the Bernoulli Family\nThe Bernoulli family was originally of Flemish origin. Because of religious persecution, the family migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business, law, medicine, and public service, several became distinguished mathematicians.\nThe most influential members of the mathematical branch of the family were:\n\nJacob Bernoulli (1655-1705)\nJohann Bernoulli (1667-1748)\nDaniel Bernoulli (1700-1782)\nNicolaus I Bernoulli (1687-1759)\nNicolaus II Bernoulli (1695-1726)\n\nTogether, they established one of the most productive mathematical dynasties in history."
+  },
+  {
+    "objectID": "index.html#early-life",
+    "href": "index.html#early-life",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "3.1 Early Life",
+    "text": "3.1 Early Life\nJacob Bernoulli was pushed toward philosophy and theology by his family, but he studied mathematics and astronomy anyway. This is a very Bernoulli move: the family often wanted respectable careers, and the mathematically talented members kept wandering toward calculus like iron filings toward a magnet."
+  },
+  {
+    "objectID": "index.html#contributions-to-calculus",
+    "href": "index.html#contributions-to-calculus",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "3.2 Contributions to Calculus",
+    "text": "3.2 Contributions to Calculus\nJacob became one of the first mathematicians to seriously understand and use Leibniz’s calculus. This mattered because Leibniz’s original papers were powerful but not exactly beginner-friendly. Jacob and Johann were among the people who translated the new notation into actual problem-solving.\nOne place Jacob appears directly in calculus courses is the Bernoulli differential equation:\n\\[\ny' + P(x)y = Q(x)y^n.\n\\]\nFor \\(n \\neq 0,1\\), the clever substitution\n\\[\nv = y^{1-n}\n\\]\nturns it into a linear differential equation. This is a perfect example of what the Bernoullis were good at: taking a messy-looking problem and finding the change of viewpoint that makes it solvable."
+  },
+  {
+    "objectID": "index.html#birth-of-probability-theory",
+    "href": "index.html#birth-of-probability-theory",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "3.3 Birth of Probability Theory",
+    "text": "3.3 Birth of Probability Theory\nJacob also worked on infinite series, the logarithmic spiral, and probability. His book Ars Conjectandi, published after his death in 1713, became one of the founding texts of probability theory. It contains an early form of the Law of Large Numbers, the idea that repeated trials settle down toward a stable probability in the long run."
+  },
+  {
+    "objectID": "index.html#the-bernoulli-numbers",
+    "href": "index.html#the-bernoulli-numbers",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "3.4 The Bernoulli Numbers",
+    "text": "3.4 The Bernoulli Numbers\nOne of Jacob’s most lasting legacies is the sequence now called the Bernoulli numbers. They appear in formulas for sums of powers:\n\\[\n1^k + 2^k + 3^k + \\cdots + n^k.\n\\]\nFor example,\n\\[\n1 + 2 + \\cdots + n = \\frac{n(n+1)}{2},\n\\]\nand\n\\[\n1^2 + 2^2 + \\cdots + n^2 = \\frac{n(n+1)(2n+1)}{6}.\n\\]\nFor higher powers, the formulas become more complicated, and Bernoulli numbers help organize them. They later appeared all over analysis, including in the Euler-Maclaurin formula and the study of the Riemann zeta function. That is the strange life of mathematical ideas: Jacob was studying sums of powers, and centuries later his numbers still show up in advanced analysis."
+  },
+  {
+    "objectID": "index.html#rival-and-successor",
+    "href": "index.html#rival-and-successor",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "4.1 Rival and Successor",
+    "text": "4.1 Rival and Successor\nJohann Bernoulli was Jacob’s younger brother. He first studied medicine, but Jacob taught him mathematics, and soon Johann became one of the strongest mathematicians in Europe. Their relationship then turned from teacher-student into rivalry. This is the part of the story where mathematics starts to feel less like quiet chalkboards and more like a competitive sport."
+  },
+  {
+    "objectID": "index.html#promotion-of-leibnizian-calculus",
+    "href": "index.html#promotion-of-leibnizian-calculus",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "4.2 Promotion of Leibnizian Calculus",
+    "text": "4.2 Promotion of Leibnizian Calculus\nJohann’s biggest historical role was spreading Leibnizian calculus. He taught, published, argued, and promoted the new methods across Europe. Through him, calculus became less of a secret technique and more of a working language."
+  },
+  {
+    "objectID": "index.html#the-brachistochrone-problem",
+    "href": "index.html#the-brachistochrone-problem",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "4.3 The Brachistochrone Problem",
+    "text": "4.3 The Brachistochrone Problem\nHis most famous challenge was the brachistochrone problem:\n\nGiven two points at different heights, what curve lets a particle slide from the upper point to the lower point in the shortest time under gravity?\n\nThe tempting answer is “a straight line,” but the correct answer is a cycloid. This problem helped launch the calculus of variations, where instead of optimizing a number, we optimize an entire curve.\nThat shift is important. Ordinary calculus asks questions like:\n\\[\n\\text{Which } x \\text{ minimizes } f(x)?\n\\]\nThe calculus of variations asks something bigger:\n\\[\n\\text{Which function or path minimizes a whole quantity?}\n\\]\nThis idea later became central in mechanics, optics, optimization, and physics."
+  },
+  {
+    "objectID": "index.html#early-life-1",
+    "href": "index.html#early-life-1",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "6.1 Early Life",
+    "text": "6.1 Early Life\nDaniel Bernoulli was Johann’s son. He trained in medicine but became deeply involved in mathematics and natural philosophy. His most famous work is Hydrodynamica (1738), where he studied fluid motion using mathematical reasoning."
+  },
+  {
+    "objectID": "index.html#bernoullis-principle",
+    "href": "index.html#bernoullis-principle",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "6.2 Bernoulli’s Principle",
+    "text": "6.2 Bernoulli’s Principle\nThe result most students recognize is Bernoulli’s principle:\n\nWhen the speed of a moving fluid increases, its pressure tends to decrease.\n\nIn a simplified steady-flow form, this appears as\n\\[\nP+\\frac12\\rho v^2+\\rho gh=\\text{constant},\n\\]\nwhere \\(P\\) is pressure, \\(\\rho\\) is density, \\(v\\) is speed, \\(g\\) is gravitational acceleration, and \\(h\\) is height."
+  },
+  {
+    "objectID": "index.html#differential-equations-and-mathematical-physics",
+    "href": "index.html#differential-equations-and-mathematical-physics",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "6.3 Differential Equations and Mathematical Physics",
+    "text": "6.3 Differential Equations and Mathematical Physics\nThis is calculus becoming physics. Instead of treating derivatives and integrals as symbolic exercises, Daniel used mathematical relationships to describe real motion. That spirit is everywhere in modern applied mathematics."
+  },
+  {
+    "objectID": "index.html#contributions-to-probability",
+    "href": "index.html#contributions-to-probability",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "6.4 Contributions to Probability",
+    "text": "6.4 Contributions to Probability\nDaniel also gave a famous way to think about the St. Petersburg paradox. His key idea was that people do not value money linearly. Winning an extra dollar matters a lot when you have little money, but it matters much less when you are already rich.\nIn modern language, Daniel was thinking in terms of expected utility rather than expected money. A common model is logarithmic utility:\n\\[\nU(w)=\\ln(w).\n\\]\nThe point is not that this exact formula always describes real people. The point is that value depends on context. This idea became important in economics, finance, decision theory, and statistics."
   },
   {
     "objectID": "index.html#interactive-watch-the-basel-sum-approach-pi26",
     "href": "index.html#interactive-watch-the-basel-sum-approach-pi26",
     "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
-    "section": "5.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)",
-    "text": "5.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)\nMove the slider to see the partial sum\n\\[\nS_N=\\sum_{n=1}^{N}\\frac{1}{n^2}\n\\]\ncreep toward Euler’s value.\n\nviewof baselTerms = Inputs.range([1, 500], {\n  value: 20,\n  step: 1,\n  label: \"Number of terms\"\n})\n\nbaselTarget = Math.PI ** 2 / 6\n\nbaselPartialSum = Array.from(\n  { length: baselTerms },\n  (_, index) =&gt; 1 / ((index + 1) ** 2)\n).reduce((total, term) =&gt; total + term, 0)\n\nbaselError = Math.abs(baselTarget - baselPartialSum)\n\nhtml`\n  &lt;div style=\"max-width: 760px; margin: 1rem auto; padding: 1rem; border: 1px solid #999; border-radius: 8px;\"&gt;\n    &lt;div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;\"&gt;\n      &lt;div&gt;&lt;strong&gt;Partial sum&lt;/strong&gt;&lt;br&gt;${baselPartialSum.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;pi^2 / 6&lt;/strong&gt;&lt;br&gt;${baselTarget.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;Error&lt;/strong&gt;&lt;br&gt;${baselError.toExponential(3)}&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div style=\"height: 18px; border: 1px solid #777; margin-top: 1rem; background: #eee;\"&gt;\n      &lt;div style=\"height: 100%; width: ${Math.min(100, (baselPartialSum / baselTarget) * 100)}%; background: #3b82f6;\"&gt;&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n`"
+    "section": "8.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)",
+    "text": "8.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)\nMove the slider to see the partial sum\n\\[\nS_N=\\sum_{n=1}^{N}\\frac{1}{n^2}\n\\]\ncreep toward Euler’s value.\n\nviewof baselTerms = Inputs.range([1, 500], {\n  value: 20,\n  step: 1,\n  label: \"Number of terms\"\n})\n\nbaselTarget = Math.PI ** 2 / 6\n\nbaselPartialSum = Array.from(\n  { length: baselTerms },\n  (_, index) =&gt; 1 / ((index + 1) ** 2)\n).reduce((total, term) =&gt; total + term, 0)\n\nbaselError = Math.abs(baselTarget - baselPartialSum)\n\nhtml`\n  &lt;div style=\"max-width: 760px; margin: 1rem auto; padding: 1rem; border: 1px solid #999; border-radius: 8px;\"&gt;\n    &lt;div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;\"&gt;\n      &lt;div&gt;&lt;strong&gt;Partial sum&lt;/strong&gt;&lt;br&gt;${baselPartialSum.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;pi^2 / 6&lt;/strong&gt;&lt;br&gt;${baselTarget.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;Error&lt;/strong&gt;&lt;br&gt;${baselError.toExponential(3)}&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div style=\"height: 18px; border: 1px solid #777; margin-top: 1rem; background: #eee;\"&gt;\n      &lt;div style=\"height: 100%; width: ${Math.min(100, (baselPartialSum / baselTarget) * 100)}%; background: #3b82f6;\"&gt;&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n`"
   }
 ]
