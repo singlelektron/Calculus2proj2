@@ -7,7 +7,11 @@ output-file: index
 ## Group Information
 
 **Group:** Still Thinking
-**Authors:** Zhang Yang, Zhu Xinbo, Zhang Qixuan
+
+**Authors:**
+- Zhang Yang MAT2509036
+- Zhu Xinbo MAT2509040
+- Zhang Qixuan MAT2509034
 
 <div style="text-align: center;">
 ![Jacob Bernoulli](asset/bernoulli_jakob.jpg){width="220" fig-alt="Portrait of Jacob Bernoulli"}
