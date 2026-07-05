@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "",
+    "text": "NoteGroup Information\n\n\n\nGroup: Bernoulli Storytellers\nAuthors: Zhang Yang\n\n\n\n\nJacob Bernoulli"
+  },
+  {
+    "objectID": "index.html#interactive-watch-the-basel-sum-approach-pi26",
+    "href": "index.html#interactive-watch-the-basel-sum-approach-pi26",
+    "title": "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus",
+    "section": "5.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)",
+    "text": "5.1 Interactive: Watch the Basel Sum Approach \\(\\pi^2/6\\)\nMove the slider to see the partial sum\n\\[\nS_N=\\sum_{n=1}^{N}\\frac{1}{n^2}\n\\]\ncreep toward Euler’s value.\n\nviewof baselTerms = Inputs.range([1, 500], {\n  value: 20,\n  step: 1,\n  label: \"Number of terms\"\n})\n\nbaselTarget = Math.PI ** 2 / 6\n\nbaselPartialSum = Array.from(\n  { length: baselTerms },\n  (_, index) =&gt; 1 / ((index + 1) ** 2)\n).reduce((total, term) =&gt; total + term, 0)\n\nbaselError = Math.abs(baselTarget - baselPartialSum)\n\nhtml`\n  &lt;div style=\"max-width: 760px; margin: 1rem auto; padding: 1rem; border: 1px solid #999; border-radius: 8px;\"&gt;\n    &lt;div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;\"&gt;\n      &lt;div&gt;&lt;strong&gt;Partial sum&lt;/strong&gt;&lt;br&gt;${baselPartialSum.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;pi^2 / 6&lt;/strong&gt;&lt;br&gt;${baselTarget.toFixed(8)}&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;Error&lt;/strong&gt;&lt;br&gt;${baselError.toExponential(3)}&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div style=\"height: 18px; border: 1px solid #777; margin-top: 1rem; background: #eee;\"&gt;\n      &lt;div style=\"height: 100%; width: ${Math.min(100, (baselPartialSum / baselTarget) * 100)}%; background: #3b82f6;\"&gt;&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n`"
+  }
+]
