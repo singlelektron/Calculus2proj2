@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Calculus Stories"
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Home"
+        href: index.qmd
+
+      - section: "Core Topics"
+        contents:
+          - text: "Sample"
+            href: sample.qmd
+          - text: "Continuity"
+            href: continuity.qmd
+
+      - section: "Extra"
+        contents:
+          - text: "Instructions"
+            href: instructions.qmd
+
+format:
+  html:
+    theme: darkly
+    toc: true
+    code-link: true
+
+jupyter: python3

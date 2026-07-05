@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"A Long Journey of Continuity\"\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "::: {.callout-note}\n",
+        "## Group Information\n",
+        "\n",
+        "**Group:** Feline Squad  \n",
+        "\n",
+        "**Authors:** Lim Tau Shean, Kaya Lim Shi Qek, Telur Lim Shi Hui, Kopi Lim Shi Fey\n",
+        ":::\n",
+        "\n",
+        "# Continuity\n",
+        "\n",
+        "_Continuity_ is a long-standing concept that anyone who spends enough time in mathematics will encounter repeatedly. Back in high school, most of the functions we worked with—single-variable ones like polynomials, exponentials, and trigonometric functions—were continuous, at least on most of their domains. Rational functions such as $f(x) = \\frac{1}{x - a}$ are also continuous almost everywhere, except at points where the expression is not defined, that is, where the denominator becomes zero.\n",
+        "\n",
+        "In high school, the so-called \"definition\" of continuity is usually introduced in a very pictorial way. A function $f$ is said to be continuous if, when sketching its graph, one can draw it without lifting the pen from the paper.\n",
+        "\n",
+        "It is a remarkably intuitive idea—almost so intuitive that it feels suspiciously informal for something that later becomes a central concept in rigorous analysis. In fact, at that stage, continuity is less a definition than a drawing rule: if your curve has no visible breaks, jumps, or sudden teleportations, then it is declared continuous. No *limits*, no *$\\epsilon$–$\\delta$*, just a pen and a steady hand.\n",
+        "\n",
+        "import plotly.graph_objects as go\n",
+        "import numpy as np\n",
+        "\n",
+        "x = np.linspace(-5, 5, 300)\n",
+        "y = x**2\n",
+        "\n",
+        "fig = go.Figure()\n",
+        "fig.add_trace(go.Scatter(x=x, y=y, mode=\"lines\"))\n",
+        "fig.show()"
+      ],
+      "id": "dd2ed48d"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/taushean/anaconda3/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

@@ -1,0 +1,28 @@
+---
+title: "YOUR FANCY TITLE"
+jupyter: python3
+---
+
+::: {.callout-note}
+## Group Information
+
+**Group:** YOUR FANCY GROUP NAME  
+**Authors:** Lim Ah Kau, Tan Ah Ngiau
+
+<div style="text-align: center;">
+![YOUR FANCY GROUP NAME](asset/sample_rickroll-roll.gif){width="250"}
+</div>
+
+:::
+
+# YOUR FANCY SECTION 1
+
+If you include any picture, you should place the picture (gif or jpeg) in the folder `asset/`. 
+
+**Important:** Name the picture with your QMD file name as a prefix. For example:
+
+- If your file is `fourier.qmd`, name your picture `fourier_euler.jpg`
+- If your file is `continuity.qmd`, name your picture `continuity_graph.png`
+- If your file is `instructions.qmd`, name your picture `instructions_screenshot.png`
+
+This is to avoid file name collisions when all submissions are collected and compiled.

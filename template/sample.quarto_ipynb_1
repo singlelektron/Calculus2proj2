@@ -1,0 +1,49 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"YOUR FANCY TITLE\"\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "::: {.callout-note}\n",
+        "## Group Information\n",
+        "\n",
+        "**Group:** YOUR FANCY GROUP NAME  \n",
+        "**Authors:** Lim Ah Kau, Tan Ah Ngiau\n",
+        "\n",
+        "<div style=\"text-align: center;\">\n",
+        "![YOUR FANCY GROUP NAME](asset/sample_rickroll-roll.gif){width=\"250\"}\n",
+        "</div>\n",
+        "\n",
+        ":::\n",
+        "\n",
+        "# YOUR FANCY SECTION 1\n",
+        "\n",
+        "If you include any picture, you should place the picture (gif or jpeg) in the folder `asset/`. \n",
+        "\n",
+        "**Important:** Name the picture with your QMD file name as a prefix. For example:\n",
+        "\n",
+        "- If your file is `fourier.qmd`, name your picture `fourier_euler.jpg`\n",
+        "- If your file is `continuity.qmd`, name your picture `continuity_graph.png`\n",
+        "- If your file is `instructions.qmd`, name your picture `instructions_screenshot.png`\n",
+        "\n",
+        "This is to avoid file name collisions when all submissions are collected and compiled."
+      ],
+      "id": "7eb7128f"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/taushean/anaconda3/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

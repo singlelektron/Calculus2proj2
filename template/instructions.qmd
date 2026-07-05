@@ -1,0 +1,63 @@
+---
+title: "Instructions for Storyteller"
+---
+
+# Objectives
+
+The objectives of this project are:
+
+- Explore the history of calculus and appreciate the development of mathematics
+- Learn how to write casual mathematical writing with the help of AI
+- Learn Quarto and QMD (Quarto Markdown)
+- Learn to verbally explain mathematical ideas through discussion
+
+# Instructions
+
+Your task is to create a mathematical storytelling website. Here's what you need to do:
+
+1. **Research** an interesting story from the history of calculus related to our course topics
+
+2. **Organize** your topic into a well-structured website using Quarto
+
+3. **Incorporate** ideas learned in class — use proper mathematical notation and concepts
+
+4. **Keep the tone** casual but professional. Your target audience is fellow math major students
+
+5. **Include** interesting pictures, diagrams, or visual elements to enhance understanding
+
+6. **Elaborate** your ideas verbally to the instructor during discussion
+
+7. **Extra credit:** Incorporate an interactive element (e.g., Plotly graphs, Desmos embeddings, or interactive code blocks)
+
+# Due Date
+
+**Week 14, Friday (July 10, 2026)**
+
+# Using AI Responsibly
+
+You are encouraged to use AI in completing this website (the instructor used the same AI to build this example).
+
+**Please ensure you use AI correctly:**
+
+- AI should serve as a **helper** to develop and refine **your** ideas
+- Do **not** become a slave to AI — the final product should reflect your own understanding and voice
+- **Poor use of AI** (e.g., blindly copying output without understanding, or relying entirely on AI for content) will receive a lower score
+
+Remember: AI is a tool, not a replacement for your own thinking.
+
+# Evaluation Breakdown
+
+| Component | Percentage |
+|-----------|------------|
+| Oral skill | 5% |
+| Level of interest / humor / effort | 20% |
+| Content | 25% |
+| Writing quality | 20% |
+| Format (Quarto structure) | 20% |
+| Proper use of AI | 10% |
+
+**Total: 100%**
+
+---
+
+Good luck, and have fun telling your calculus story!
