@@ -3,171 +3,250 @@ title: "The Bernoulli Family: A Dynasty that Shaped the Development of Calculus"
 output-file: index
 ---
 
+::: {.callout-note}
+## Group Information
+
+**Group:** Still Thinking
+**Authors:** Zhang Yang, Zhu Xinbo, Zhang Qixuan
+
+<div style="text-align: center;">
+![Jacob Bernoulli](asset/bernoulli_jakob.jpg){width="220" fig-alt="Portrait of Jacob Bernoulli"}
+</div>
+
+:::
+
 # Introduction
 
-The history of calculus is often associated with Isaac Newton and Gottfried Wilhelm Leibniz, who independently developed the fundamental ideas of differential and integral calculus during the seventeenth century. However, the growth of calculus into a powerful mathematical discipline was largely driven by later mathematicians who expanded, applied, and refined these ideas. Among these contributors, no family had a greater influence than the Bernoulli family.
+When people tell the story of calculus, the spotlight usually lands on Isaac Newton and Gottfried Wilhelm Leibniz. Fair enough: they created the first big versions of differential and integral calculus. But if calculus were a new machine, Newton and Leibniz built the prototype. The Bernoulli family helped turn it into a machine that other mathematicians could actually use, repair, argue over, and attach to physics.
 
-Originating from Basel, Switzerland, the Bernoullis produced several generations of mathematicians whose work transformed calculus from a new mathematical technique into an essential tool for science and engineering. Their contributions ranged from differential equations and infinite series to probability theory and mathematical physics. The family's influence extended for more than a century and played a crucial role in establishing many areas of modern mathematics.
+The Bernoullis were a Swiss family from Basel whose mathematical branch produced several major figures across multiple generations. Their work touched differential equations, infinite series, probability, mechanics, fluid dynamics, and the calculus of variations. In other words, they were not just "a family with a few smart people." They were almost a small research institute, except with more dinner-table tension.
 
-# Origins of the Bernoulli Family
+This story focuses on four central members:
 
-The Bernoulli family was originally of Flemish origin. Due to religious persecution, they migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business and public service, several became distinguished mathematicians.
+- **Jacob Bernoulli**: early master of Leibnizian calculus, probability, infinite series, and Bernoulli numbers.
+- **Johann Bernoulli**: energetic promoter of calculus, famous teacher, and a key figure in the brachistochrone problem.
+- **Nicolaus I Bernoulli**: important contributor to probability and the St. Petersburg paradox.
+- **Daniel Bernoulli**: bridge between calculus, probability, economics, and fluid mechanics.
+
+## Origins of the Bernoulli Family
+
+The Bernoulli family was originally of Flemish origin. Because of religious persecution, the family migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business, law, medicine, and public service, several became distinguished mathematicians.
 
 The most influential members of the mathematical branch of the family were:
 
-* Jacob Bernoulli (1654–1705)
-* Johann Bernoulli (1667–1748)
-* Daniel Bernoulli (1700–1782)
-* Nicolaus Bernoulli I (1687–1759)
-* Nicolaus Bernoulli II (1695–1726)
+- Jacob Bernoulli (1655-1705)
+- Johann Bernoulli (1667-1748)
+- Daniel Bernoulli (1700-1782)
+- Nicolaus I Bernoulli (1687-1759)
+- Nicolaus II Bernoulli (1695-1726)
 
 Together, they established one of the most productive mathematical dynasties in history.
 
-The following is their Family tree of the Basler Bernoullis:
-
 # The Bernoulli Family Tree of Mathematicians
-This includes the family members who made significant contributions to mathematics. You can click the box of the name to access the story of the mathematician if he's mentioned below. The full famlity tree is given at the end of the website.
+
+The mathematical Bernoullis can be confusing because the same names repeat like variables in a badly labelled proof. Here is the simplified tree for the main people in this story. Clickable boxes jump to the related section.
+
 ```{mermaid}
 graph TD
 
-N["Niklaus Bernoulli (1623–1708)"]
+N["Niklaus Bernoulli (1623-1708)"]
 
-N --> J1["Jakob I Bernoulli (1654–1705)"]
-N --> N0["Nikolaus Bernoulli (1662–1716)"]
-N --> J2["Johann I Bernoulli (1667–1748)"]
-N --> H0["Hieronymus Bernoulli (1669–1760)"]
+N --> J1["Jacob I Bernoulli (1655-1705)"]
+N --> N0["Nicolaus Bernoulli (1662-1716)"]
+N --> J2["Johann I Bernoulli (1667-1748)"]
+N --> H0["Hieronymus Bernoulli (1669-1760)"]
 
-N0 --> NI["Nikolaus I Bernoulli (1687–1759)"]
+N0 --> NI["Nicolaus I Bernoulli (1687-1759)"]
 
-J2 --> NII["Nikolaus II Bernoulli (1695–1726)"]
-J2 --> D["Daniel Bernoulli (1700–1782)"]
-J2 --> JII["Johann II Bernoulli (1710–1790)"]
+J2 --> NII["Nicolaus II Bernoulli (1695-1726)"]
+J2 --> D["Daniel Bernoulli (1700-1782)"]
+J2 --> JII["Johann II Bernoulli (1710-1790)"]
 
-JII --> JIII["Johann III Bernoulli (1744–1807)"]
-JII --> DII["Daniel II Bernoulli (1751–1834)"]
-JII --> NIII["Nikolaus III Bernoulli (1754–1841)"]
-JII --> JAC2["Jakob II Bernoulli (1759–1789)"]
+JII --> JIII["Johann III Bernoulli (1744-1807)"]
+JII --> DII["Daniel II Bernoulli (1751-1834)"]
+JII --> NIII["Nicolaus III Bernoulli (1754-1841)"]
+JII --> JAC2["Jacob II Bernoulli (1759-1789)"]
 
-click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click J1 "#jacob-bernoulli-1655-1705" "Jacob Bernoulli"
 click J2 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
 click NI "#nicolaus-i-bernoulli-1687-1759" "Nicolaus I Bernoulli"
 click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 ```
- 
-<a id="jacob-bernoulli-1654-1705"></a>
 
-# Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability
+<a id="jacob-bernoulli-1655-1705"></a>
 
-![](images/Jakob_Bernoulli.jpg){ width=180px alt="Jacob Bernoulli" fig-align="center" }
+# Jacob Bernoulli (1655-1705): Pioneer of Calculus and Probability
+
+<div style="text-align: center;">
+![Jacob Bernoulli](asset/bernoulli_jakob.jpg){width="230" fig-alt="Portrait of Jacob Bernoulli"}
+</div>
 
 ## Early Life
 
-Jacob Bernoulli was initially expected to study theology, following his family's wishes. However, he secretly pursued mathematics and astronomy. After learning the newly developed calculus of Leibniz, he quickly became one of its leading advocates.
+Jacob Bernoulli was pushed toward philosophy and theology by his family, but he studied mathematics and astronomy anyway. This is a very Bernoulli move: the family often wanted respectable careers, and the mathematically talented members kept wandering toward calculus like iron filings toward a magnet.
 
 ## Contributions to Calculus
 
-Jacob was among the first mathematicians to understand the potential of Leibniz's methods. He applied calculus to solve problems involving curves, motion, and geometry.
+Jacob became one of the first mathematicians to seriously understand and use Leibniz's calculus. This mattered because Leibniz's original papers were powerful but not exactly beginner-friendly. Jacob and Johann were among the people who translated the new notation into actual problem-solving.
 
-One of his most famous achievements was his study of the logarithmic spiral, a curve that fascinated him because it preserved its shape under scaling. He admired the curve so much that he requested it be engraved on his tombstone.
+One place Jacob appears directly in calculus courses is the **Bernoulli differential equation**:
 
-Jacob also contributed significantly to the theory of infinite series and differential equations. His investigations helped demonstrate the power of calculus for solving complex mathematical problems.
+$$
+y' + P(x)y = Q(x)y^n.
+$$
+
+For $n \neq 0,1$, the clever substitution
+
+$$
+v = y^{1-n}
+$$
+
+turns it into a linear differential equation. This is a perfect example of what the Bernoullis were good at: taking a messy-looking problem and finding the change of viewpoint that makes it solvable.
 
 ## Birth of Probability Theory
 
-Jacob's posthumously published book *Ars Conjectandi* (1713) became a foundational text in probability theory. In this work, he established what is now known as the Law of Large Numbers, showing that the observed frequency of an event approaches its theoretical probability as the number of trials increases.
+Jacob also worked on infinite series, the logarithmic spiral, and probability. His book *Ars Conjectandi*, published after his death in 1713, became one of the founding texts of probability theory. It contains an early form of the **Law of Large Numbers**, the idea that repeated trials settle down toward a stable probability in the long run.
 
-This result laid the foundation for modern statistics and probabilistic reasoning.
+## The Bernoulli Numbers
+
+One of Jacob's most lasting legacies is the sequence now called the **Bernoulli numbers**. They appear in formulas for sums of powers:
+
+$$
+1^k + 2^k + 3^k + \cdots + n^k.
+$$
+
+For example,
+
+$$
+1 + 2 + \cdots + n = \frac{n(n+1)}{2},
+$$
+
+and
+
+$$
+1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}.
+$$
+
+For higher powers, the formulas become more complicated, and Bernoulli numbers help organize them. They later appeared all over analysis, including in the Euler-Maclaurin formula and the study of the Riemann zeta function. That is the strange life of mathematical ideas: Jacob was studying sums of powers, and centuries later his numbers still show up in advanced analysis.
 
 <a id="johann-bernoulli-1667-1748"></a>
 
-# Johann Bernoulli (1667–1748): The Great Teacher of Calculus
+# Johann Bernoulli (1667-1748): The Great Teacher of Calculus
 
-![](images/Johann_Bernoulli2.jpg){ width=180px alt="Johann Bernoulli" fig-align="center" }
+<div style="text-align: center;">
+![Johann Bernoulli](asset/bernoulli_johann.jpg){width="230" fig-alt="Portrait of Johann Bernoulli"}
+</div>
 
 ## Rival and Successor
 
-Johann Bernoulli, Jacob's younger brother, learned mathematics largely from Jacob. He soon became a brilliant mathematician in his own right. Their relationship, however, became increasingly competitive, leading to famous disputes over priority and recognition.
+Johann Bernoulli was Jacob's younger brother. He first studied medicine, but Jacob taught him mathematics, and soon Johann became one of the strongest mathematicians in Europe. Their relationship then turned from teacher-student into rivalry. This is the part of the story where mathematics starts to feel less like quiet chalkboards and more like a competitive sport.
 
 ## Promotion of Leibnizian Calculus
 
-Johann played a major role in spreading Leibniz's notation and methods throughout Europe. His lectures and publications helped establish the notation still used today, including symbols such as:
-
-* $\int$ for integration
-* $d$ for differentiation
-
-Through his teaching, Johann influenced an entire generation of mathematicians.
+Johann's biggest historical role was spreading Leibnizian calculus. He taught, published, argued, and promoted the new methods across Europe. Through him, calculus became less of a secret technique and more of a working language.
 
 ## The Brachistochrone Problem
 
-In 1696 Johann proposed the famous Brachistochrone Problem:
+His most famous challenge was the **brachistochrone problem**:
 
-> Given two points at different heights, what path allows a particle to travel between them in the shortest time under gravity?
+> Given two points at different heights, what curve lets a particle slide from the upper point to the lower point in the shortest time under gravity?
 
-The challenge attracted solutions from leading mathematicians across Europe, including Newton and Leibniz.
+The tempting answer is "a straight line," but the correct answer is a **cycloid**. This problem helped launch the calculus of variations, where instead of optimizing a number, we optimize an entire curve.
 
-The solution was a cycloid, not a straight line. This problem became one of the earliest and most important applications of calculus of variations, a field that later influenced mechanics, physics, and optimization theory.
+That shift is important. Ordinary calculus asks questions like:
 
-## Mentor to Euler
+$$
+\text{Which } x \text{ minimizes } f(x)?
+$$
 
-Perhaps Johann's greatest legacy was teaching the young Leonhard Euler. Under Johann's guidance, Euler developed into one of the greatest mathematicians in history and further expanded many ideas originating from the Bernoulli family.
+The calculus of variations asks something bigger:
+
+$$
+\text{Which function or path minimizes a whole quantity?}
+$$
+
+This idea later became central in mechanics, optics, optimization, and physics.
 
 <a id="nicolaus-i-bernoulli-1687-1759"></a>
 
-# Nicolaus I Bernoulli (1687–1759): Extending the Family Legacy
+# Nicolaus I Bernoulli (1687-1759): Extending the Family Legacy
 
-![](images/Bernoulli_Nicolaus(II).jpeg){ width=160px alt="Nicolaus Bernoulli (image file labelled II)" fig-align="center" }
+<div style="text-align: center;">
+![Nicolaus Bernoulli](asset/bernoulli_nicolaus.jpg){width="210" fig-alt="Portrait associated with Nicolaus Bernoulli"}
+</div>
 
-Although overshadowed by his famous relatives, Nicolaus I Bernoulli played an important role in the development of probability theory and mathematical analysis. The son of Nikolaus Bernoulli and nephew of Jacob and Johann Bernoulli, he continued the family's tradition of mathematical scholarship.
+Nicolaus I Bernoulli was the nephew of Jacob and Johann. He studied law and mathematics, and much of his important work appeared through correspondence. His name is strongly connected with the **St. Petersburg paradox**, one of the best historical examples of probability refusing to behave politely.
 
-Nicolaus studied law and mathematics at the University of Basel. His work focused largely on probability, finance, and the application of mathematics to practical problems. He contributed to the early development of mathematical economics and corresponded with many of the leading scholars of his time.
+The simplified game is this:
 
-One of his most famous contributions was his discussion of what later became known as the **St. Petersburg Paradox**, a probability problem involving a lottery with an infinite expected value. The paradox challenged traditional interpretations of expected gain and influenced later developments in probability theory and economics. Daniel Bernoulli would later provide a famous resolution to the paradox through the concept of expected utility.
+1. Flip a fair coin until the first head appears.
+2. If the first head appears on toss $k$, the payoff is $2^k$.
+3. The expected value is
 
-Although Nicolaus I did not make discoveries as revolutionary as Jacob or Johann, his work helped maintain the Bernoulli family's influence in European mathematics during the eighteenth century.
+$$
+\frac12(2)+\frac14(4)+\frac18(8)+\cdots
+=1+1+1+\cdots = \infty.
+$$
+
+So the expected monetary value is infinite. But almost nobody would pay an enormous amount of money to play once. The paradox asks: if the expected value is infinite, why does the game not feel infinitely valuable?
+
+That question pushed mathematicians to think harder about risk, utility, and human decision-making. It also set up Daniel Bernoulli's famous response.
 
 <a id="daniel-bernoulli-1700-1782"></a>
 
-# Daniel Bernoulli (1700–1782): Mathematics Meets Physics
+# Daniel Bernoulli (1700-1782): Mathematics Meets Physics
 
-![](images/Porträt_des_Daniel_Bernoulli_-_edit1.jpg){ width=180px alt="Daniel Bernoulli" fig-align="center" }
+<div style="text-align: center;">
+![Daniel Bernoulli](asset/bernoulli_daniel.jpg){width="230" fig-alt="Portrait of Daniel Bernoulli"}
+</div>
 
 ## Early Life
 
-Daniel Bernoulli was Johann's son and one of the most talented members of the family. Although trained in medicine, his passion remained mathematics and natural philosophy.
+Daniel Bernoulli was Johann's son. He trained in medicine but became deeply involved in mathematics and natural philosophy. His most famous work is *Hydrodynamica* (1738), where he studied fluid motion using mathematical reasoning.
 
 ## Bernoulli's Principle
 
-Daniel is best known for his work in fluid dynamics. In his book *Hydrodynamica* (1738), he established what is now called Bernoulli's Principle:
+The result most students recognize is **Bernoulli's principle**:
 
-> As the speed of a fluid increases, its pressure decreases.
+> When the speed of a moving fluid increases, its pressure tends to decrease.
 
-This principle explains many physical phenomena, including the lift generated by airplane wings and the operation of various engineering devices.
+In a simplified steady-flow form, this appears as
+
+$$
+P+\frac12\rho v^2+\rho gh=\text{constant},
+$$
+
+where $P$ is pressure, $\rho$ is density, $v$ is speed, $g$ is gravitational acceleration, and $h$ is height.
 
 ## Differential Equations and Mathematical Physics
 
-Daniel extensively used calculus to model physical systems. His work helped demonstrate how differential equations could describe real-world phenomena such as fluid flow, vibration, and motion.
-
-This represented an important shift in mathematics: calculus was no longer merely a tool for solving abstract problems but became a language for understanding nature itself.
+This is calculus becoming physics. Instead of treating derivatives and integrals as symbolic exercises, Daniel used mathematical relationships to describe real motion. That spirit is everywhere in modern applied mathematics.
 
 ## Contributions to Probability
 
-Daniel also studied probability and economics. His analysis of decision-making under uncertainty led to the concept of expected utility, which remains influential in economics and behavioral science today.
+Daniel also gave a famous way to think about the St. Petersburg paradox. His key idea was that people do not value money linearly. Winning an extra dollar matters a lot when you have little money, but it matters much less when you are already rich.
 
+In modern language, Daniel was thinking in terms of **expected utility** rather than expected money. A common model is logarithmic utility:
 
-<a id="leonhard-euler-1707-1783"></a>
+$$
+U(w)=\ln(w).
+$$
+
+The point is not that this exact formula always describes real people. The point is that value depends on context. This idea became important in economics, finance, decision theory, and statistics.
 
 # The Bernoulli Family and Leonhard Euler
 
-![](images/Leonhard_Euler_-_Jakob_Emanuel_Handmann_(Kunstmuseum_Basel).jpg){ width=180px alt="Leonhard Euler" fig-align="center" }
+<a id="leonhard-euler-1707-1783"></a>
 
-One of the greatest contributions of the Bernoulli family was their influence on Leonhard Euler (1707–1783), who is widely regarded as one of the greatest mathematicians in history.
+<div style="text-align: center;">
+![Leonhard Euler](asset/bernoulli_euler.jpg){width="230" fig-alt="Portrait of Leonhard Euler"}
+</div>
+
+One of the greatest contributions of the Bernoulli family was their influence on Leonhard Euler (1707-1783), who is widely regarded as one of the greatest mathematicians in history.
 
 Euler's father was a close friend of Johann Bernoulli, and Johann quickly recognized the young Euler's exceptional talent. Although Euler initially studied theology, Johann encouraged him to pursue mathematics. Through regular meetings and private instruction, Johann introduced Euler to the latest developments in calculus and mathematical analysis.
 
-Euler later expanded many of the ideas pioneered by the Bernoullis. He developed new methods for solving differential equations, advanced the calculus of variations, and established many of the foundations of modern analysis. In a sense, the Bernoulli family served as a bridge between the invention of calculus by Newton and Leibniz and its later systematic development by Euler.
-
-The relationship between the Bernoullis and Euler demonstrates how mathematical knowledge is often transmitted through mentorship and collaboration across generations.
-
+Euler later expanded many of the ideas pioneered by the Bernoullis. He developed new methods for solving differential equations, advanced the calculus of variations, and established many foundations of modern analysis. In a sense, the Bernoulli family served as a bridge between the invention of calculus by Newton and Leibniz and its later systematic development by Euler.
 
 # The Basel Problem: A Famous Challenge in Analysis
 
@@ -177,12 +256,7 @@ The problem asks for the exact value of the infinite series
 
 $$
 \sum_{n=1}^{\infty}\frac{1}{n^2}
-$$
-
-which begins as
-
-$$
-1+\frac14+\frac19+\frac1{16}+\cdots.
+= 1+\frac14+\frac19+\frac1{16}+\cdots .
 $$
 
 Jacob Bernoulli first studied this series, and both he and Johann attempted unsuccessfully to determine its exact sum. The problem remained unsolved for several decades and became one of the most famous challenges in mathematics.
@@ -190,145 +264,162 @@ Jacob Bernoulli first studied this series, and both he and Johann attempted unsu
 In 1734, Leonhard Euler astonished the mathematical community by proving that
 
 $$
-\sum_{n=1}^{\infty}\frac{1}{n^2}
-= \frac{\pi^2}{6}.
+\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}.
 $$
 
 This remarkable result connected an infinite series of rational numbers with the geometric constant $\pi$. Euler's solution relied heavily on techniques that had emerged from the Bernoulli tradition of studying infinite series and analysis.
 
-Today, the Basel Problem is regarded as a milestone in the development of mathematical analysis and illustrates the important role that the Bernoulli family played in advancing the study of infinite series.
+## Interactive: Watch the Basel Sum Approach $\pi^2/6$
 
-# The Bernoulli Numbers
-
-One of the family's most enduring mathematical legacies is the sequence known as the Bernoulli Numbers.
-
-These numbers first appeared in Jacob Bernoulli's investigation of sums of powers:
+Move the slider to see the partial sum
 
 $$
-1^k + 2^k + \cdots + n^k.
+S_N=\sum_{n=1}^{N}\frac{1}{n^2}
 $$
 
-Bernoulli discovered formulas that expressed these sums in a systematic way, introducing numbers that now bear his name.
+creep toward Euler's value.
 
-Today, Bernoulli numbers appear in:
+```{ojs}
+//| echo: false
+viewof baselTerms = Inputs.range([1, 500], {
+  value: 20,
+  step: 1,
+  label: "Number of terms"
+})
 
-* Number theory
-* Infinite series
-* Numerical analysis
-* The Euler–Maclaurin formula
-* The Riemann zeta function
+baselTarget = Math.PI ** 2 / 6
 
-Their continued importance demonstrates the lasting impact of Bernoulli's work on modern mathematics.
+baselPartialSum = Array.from(
+  { length: baselTerms },
+  (_, index) => 1 / ((index + 1) ** 2)
+).reduce((total, term) => total + term, 0)
+
+baselError = Math.abs(baselTarget - baselPartialSum)
+
+html`
+  <div style="max-width: 760px; margin: 1rem auto; padding: 1rem; border: 1px solid #999; border-radius: 8px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+      <div><strong>Partial sum</strong><br>${baselPartialSum.toFixed(8)}</div>
+      <div><strong>pi^2 / 6</strong><br>${baselTarget.toFixed(8)}</div>
+      <div><strong>Error</strong><br>${baselError.toExponential(3)}</div>
+    </div>
+    <div style="height: 18px; border: 1px solid #777; margin-top: 1rem; background: #eee;">
+      <div style="height: 100%; width: ${Math.min(100, (baselPartialSum / baselTarget) * 100)}%; background: #3b82f6;"></div>
+    </div>
+  </div>
+`
+```
 
 # Family Rivalries and Competition
 
-The Bernoulli family was famous not only for its mathematical achievements but also for its intense rivalries.
+The Bernoulli family was brilliant, but not exactly calm. Jacob and Johann argued over priority and recognition. Johann later had serious conflict with Daniel, reportedly becoming jealous when Daniel shared a prize with him. This is uncomfortable, but it also makes the history more human.
 
-Jacob and Johann frequently argued over priority for discoveries. After Jacob's death, Johann continued many of the disputes publicly.
-
-Later, Johann became jealous of the success of his son Daniel. When Daniel won a scientific prize jointly with him, Johann reportedly became so upset that he refused to speak to his son for some time.
-
-These conflicts reveal the highly competitive environment in which mathematical discoveries were made during the eighteenth century.
+Mathematics often appears in textbooks as clean final answers. The actual development is messier: ambition, pride, friendship, mentorship, rivalry, mistakes, and correction all push the subject forward. The Bernoullis are a good reminder that mathematics is made by people, not by perfectly rational theorem-generating machines.
 
 # Influence on Modern Calculus
 
-The Bernoulli family helped transform calculus from a new invention into a mature mathematical discipline.
+The Bernoulli story connects directly to topics from calculus:
 
-Their contributions include:
+- **Differential equations:** Bernoulli equations and modeling change.
+- **Infinite series:** the Basel problem and power sums.
+- **Optimization:** the brachistochrone problem and calculus of variations.
+- **Applications:** fluid dynamics through Bernoulli's principle.
+- **Probability:** the Law of Large Numbers and expected utility.
 
-* Development of differential equations
-* Applications of calculus to mechanics
-* Foundations of probability theory
-* Creation of the calculus of variations
-* Advancement of infinite series
-* Promotion of Leibnizian notation
-* Mathematical modeling of physical phenomena
-
-Many concepts studied in modern calculus courses trace their origins directly to the work of the Bernoullis.
+Their work helped transform calculus from a new invention into a flexible language for science. That is why the Bernoulli name keeps appearing in different courses: differential equations, probability, statistics, physics, economics, and numerical analysis.
 
 # Conclusion
 
-The Bernoulli family occupies a unique place in the history of mathematics. Across three generations, they produced pioneering research that shaped calculus, probability, differential equations, and mathematical physics. Jacob Bernoulli advanced the foundations of probability and series, Johann Bernoulli spread and expanded calculus throughout Europe, and Daniel Bernoulli demonstrated the power of mathematics in understanding the physical world.
+The Bernoulli family is not just a side note in the history of calculus. Jacob helped develop calculus, series, and probability. Johann spread the new calculus and trained Euler. Nicolaus I pushed probability into strange and important questions. Daniel showed how calculus could describe fluids, risk, and physical systems.
 
-Their collective achievements influenced mathematicians such as Euler and contributed significantly to the development of modern science. More than three centuries later, concepts bearing the Bernoulli name remain central to mathematics, engineering, economics, and physics. The story of the Bernoulli family is therefore not merely a family history but an important chapter in the evolution of calculus itself.
+Together, they helped move calculus from invention to maturity. They also left behind enough family drama to make the story memorable. In a strange way, that combination is perfect: beautiful mathematics, messy humans, and ideas that still show up whenever we study change.
 
-# The full Bernoulli Family Tree
+# The Full Bernoulli Family Tree
+
 ```{mermaid}
 graph LR
 
-N["Niklaus Bernoulli (1623–1708)"]
+N["Niklaus Bernoulli (1623-1708)"]
 
-N --> J1["Jakob I (1655–1705)"]
-N --> N1["Nikolaus (1662–1716)"]
-N --> Jo1["Johann I (1667–1748)"]
-N --> H1["Hieronymus (1669–1760)"]
+N --> J1["Jacob I (1655-1705)"]
+N --> N1["Nicolaus (1662-1716)"]
+N --> Jo1["Johann I (1667-1748)"]
+N --> H1["Hieronymus (1669-1760)"]
 
-N1 --> NI["Nikolaus I (1687–1759)"]
+N1 --> NI["Nicolaus I (1687-1759)"]
 
-Jo1 --> NII["Nikolaus II (1695–1726)"]
-Jo1 --> D1["Daniel (1700–1782)"]
-Jo1 --> J2["Johann II (1710–1790)"]
+Jo1 --> NII["Nicolaus II (1695-1726)"]
+Jo1 --> D1["Daniel (1700-1782)"]
+Jo1 --> J2["Johann II (1710-1790)"]
 
-H1 --> F1["Franz (1705–1777)"]
+H1 --> F1["Franz (1705-1777)"]
 
-J2 --> J3["Johann III (1744–1807)"]
-J2 --> D2["Daniel II (1751–1834)"]
-J2 --> N3["Nikolaus III (1754–1841)"]
-J2 --> Ja2["Jakob II (1759–1789)"]
+J2 --> J3["Johann III (1744-1807)"]
+J2 --> D2["Daniel II (1751-1834)"]
+J2 --> N3["Nicolaus III (1754-1841)"]
+J2 --> Ja2["Jacob II (1759-1789)"]
 
-F1 --> H2["Hieronymus (1735–1786)"]
+F1 --> H2["Hieronymus (1735-1786)"]
 
-J3 --> C1["Christoph (1782–1863)"]
-J3 --> Jos["Johannes (1785–1869)"]
+J3 --> C1["Christoph (1782-1863)"]
+J3 --> Jos["Johannes (1785-1869)"]
 
-D2 --> Leo1["Leonhard (1786–1852)"]
-D2 --> L2["Leonhard (1791–1871)"]
+D2 --> Leo1["Leonhard (1786-1852)"]
+D2 --> L2["Leonhard (1791-1871)"]
 
-N3 --> N4["Nikolaus (1793–1876)"]
+N3 --> N4["Nicolaus (1793-1876)"]
 
-H2 --> JJ1["Johann Jacob (1769–1853)"]
+H2 --> JJ1["Johann Jacob (1769-1853)"]
 
-C1 --> Car1["Carl Christoph (1809–1884)"]
+C1 --> Car1["Carl Christoph (1809-1884)"]
 
-Jos --> Kar1["Carl Johann (1835–1906)"]
+Jos --> Kar1["Carl Johann (1835-1906)"]
 
-Leo1 --> Edu1["Eduard (1819–1899)"]
+Leo1 --> Edu1["Eduard (1819-1899)"]
 
-L2 --> Aug1["August (1839–1921)"]
-L2 --> Fritz["Fritz (1824–1913)"]
+L2 --> Aug1["August (1839-1921)"]
+L2 --> Fritz["Fritz (1824-1913)"]
 
-N4 --> Theo["Theodor (1837–1909)"]
+N4 --> Theo["Theodor (1837-1909)"]
 
-JJ1 --> JJ2["Johann Jacob (1802–1892)"]
-JJ1 --> Franz2["Franz (1813–1850)"]
+JJ1 --> JJ2["Johann Jacob (1802-1892)"]
+JJ1 --> Franz2["Franz (1813-1850)"]
 
-Car1 --> CaC["Carl Christoph (1861–1923)"]
+Car1 --> CaC["Carl Christoph (1861-1923)"]
 
-Kar1 --> CaA["Carl Albrecht (1868–1937)"]
+Kar1 --> CaA["Carl Albrecht (1868-1937)"]
 
-Edu1 --> Edu2["Eduard (1867–1927)"]
+Edu1 --> Edu2["Eduard (1867-1927)"]
 
-Aug1 --> AL["August Leonhard (1879–1939)"]
-Aug1 --> Maria["Maria (1868–1963)"]
+Aug1 --> AL["August Leonhard (1879-1939)"]
+Aug1 --> Maria["Maria (1868-1963)"]
 
-Theo --> Rud["Rudolf (1880–1948)"]
+Theo --> Rud["Rudolf (1880-1948)"]
 
-JJ2 --> JJ3["Johann Jakob (1831–1913)"]
-JJ2 --> CaG["Carl Gustav (1834–1878)"]
-JJ2 --> Ernst["Ernst (1846–1931)"]
+JJ2 --> JJ3["Johann Jakob (1831-1913)"]
+JJ2 --> CaG["Carl Gustav (1834-1878)"]
+JJ2 --> Ernst["Ernst (1846-1931)"]
 
-Franz2 --> Eli["Elisabeth (1873–1935)"]
-Franz2 --> Hans["Hans (1876–1959)"]
+Franz2 --> Eli["Elisabeth (1873-1935)"]
+Franz2 --> Hans["Hans (1876-1959)"]
 
-CaC --> Christoph["Christoph (1897–1981)"]
-CaA --> Eva["Eva (1903–1995)"]
-JJ3 --> Lucas["Lucas (1907–1976)"]
-Ernst --> Eugen["Eugen (1882–1983)"]
+CaC --> Christoph["Christoph (1897-1981)"]
+CaA --> Eva["Eva (1903-1995)"]
+JJ3 --> Lucas["Lucas (1907-1976)"]
+Ernst --> Eugen["Eugen (1882-1983)"]
 
 Lucas --> Cornelia["Cornelia Bernoulli (b. 1954)"]
 
-click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click J1 "#jacob-bernoulli-1655-1705" "Jacob Bernoulli"
 click Jo1 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
 click NI "#nicolaus-i-bernoulli-1687-1759" "Nicolaus I Bernoulli"
 click D1 "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 ```
+
+# Sources
+
+- MacTutor History of Mathematics Archive, [Jacob Bernoulli](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/)
+- MacTutor History of Mathematics Archive, [Johann Bernoulli](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann/)
+- MacTutor History of Mathematics Archive, [Daniel Bernoulli](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Daniel/)
+- MacTutor History of Mathematics Archive, [Bernoulli family tree](https://mathshistory.st-andrews.ac.uk/Diagrams/Bernoulli_family.gif)
+- Encyclopaedia Britannica, [Bernoulli family](https://www.britannica.com/topic/Bernoulli-family)

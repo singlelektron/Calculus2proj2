@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -70,6 +105,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -128,7 +165,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#jacob-bernoulli-1654-1705"> 
+    <a class="nav-link" href="./index.html#jacob-bernoulli-1655-1705"> 
 <span class="menu-text">Jacob</span></a>
   </li>  
   <li class="nav-item">
@@ -163,37 +200,42 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#origins-of-the-bernoulli-family" id="toc-origins-of-the-bernoulli-family" class="nav-link" data-scroll-target="#origins-of-the-bernoulli-family"><span class="header-section-number">2</span> Origins of the Bernoulli Family</a></li>
-  <li><a href="#the-bernoulli-family-tree-of-mathematicians" id="toc-the-bernoulli-family-tree-of-mathematicians" class="nav-link" data-scroll-target="#the-bernoulli-family-tree-of-mathematicians"><span class="header-section-number">3</span> The Bernoulli Family Tree of Mathematicians</a></li>
-  <li><a href="#jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" id="toc-jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" class="nav-link" data-scroll-target="#jacob-bernoulli-16541705-pioneer-of-calculus-and-probability"><span class="header-section-number">4</span> Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul class="collapse">
-  <li><a href="#early-life" id="toc-early-life" class="nav-link" data-scroll-target="#early-life"><span class="header-section-number">4.1</span> Early Life</a></li>
-  <li><a href="#contributions-to-calculus" id="toc-contributions-to-calculus" class="nav-link" data-scroll-target="#contributions-to-calculus"><span class="header-section-number">4.2</span> Contributions to Calculus</a></li>
-  <li><a href="#birth-of-probability-theory" id="toc-birth-of-probability-theory" class="nav-link" data-scroll-target="#birth-of-probability-theory"><span class="header-section-number">4.3</span> Birth of Probability Theory</a></li>
+  <li><a href="#origins-of-the-bernoulli-family" id="toc-origins-of-the-bernoulli-family" class="nav-link" data-scroll-target="#origins-of-the-bernoulli-family"><span class="header-section-number">1.1</span> Origins of the Bernoulli Family</a></li>
   </ul></li>
-  <li><a href="#johann-bernoulli-16671748-the-great-teacher-of-calculus" id="toc-johann-bernoulli-16671748-the-great-teacher-of-calculus" class="nav-link" data-scroll-target="#johann-bernoulli-16671748-the-great-teacher-of-calculus"><span class="header-section-number">5</span> Johann Bernoulli (1667–1748): The Great Teacher of Calculus</a>
+  <li><a href="#the-bernoulli-family-tree-of-mathematicians" id="toc-the-bernoulli-family-tree-of-mathematicians" class="nav-link" data-scroll-target="#the-bernoulli-family-tree-of-mathematicians"><span class="header-section-number">2</span> The Bernoulli Family Tree of Mathematicians</a></li>
+  <li><a href="#jacob-bernoulli-1655-1705-pioneer-of-calculus-and-probability" id="toc-jacob-bernoulli-1655-1705-pioneer-of-calculus-and-probability" class="nav-link" data-scroll-target="#jacob-bernoulli-1655-1705-pioneer-of-calculus-and-probability"><span class="header-section-number">3</span> Jacob Bernoulli (1655-1705): Pioneer of Calculus and Probability</a>
   <ul class="collapse">
-  <li><a href="#rival-and-successor" id="toc-rival-and-successor" class="nav-link" data-scroll-target="#rival-and-successor"><span class="header-section-number">5.1</span> Rival and Successor</a></li>
-  <li><a href="#promotion-of-leibnizian-calculus" id="toc-promotion-of-leibnizian-calculus" class="nav-link" data-scroll-target="#promotion-of-leibnizian-calculus"><span class="header-section-number">5.2</span> Promotion of Leibnizian Calculus</a></li>
-  <li><a href="#the-brachistochrone-problem" id="toc-the-brachistochrone-problem" class="nav-link" data-scroll-target="#the-brachistochrone-problem"><span class="header-section-number">5.3</span> The Brachistochrone Problem</a></li>
-  <li><a href="#mentor-to-euler" id="toc-mentor-to-euler" class="nav-link" data-scroll-target="#mentor-to-euler"><span class="header-section-number">5.4</span> Mentor to Euler</a></li>
+  <li><a href="#early-life" id="toc-early-life" class="nav-link" data-scroll-target="#early-life"><span class="header-section-number">3.1</span> Early Life</a></li>
+  <li><a href="#contributions-to-calculus" id="toc-contributions-to-calculus" class="nav-link" data-scroll-target="#contributions-to-calculus"><span class="header-section-number">3.2</span> Contributions to Calculus</a></li>
+  <li><a href="#birth-of-probability-theory" id="toc-birth-of-probability-theory" class="nav-link" data-scroll-target="#birth-of-probability-theory"><span class="header-section-number">3.3</span> Birth of Probability Theory</a></li>
+  <li><a href="#the-bernoulli-numbers" id="toc-the-bernoulli-numbers" class="nav-link" data-scroll-target="#the-bernoulli-numbers"><span class="header-section-number">3.4</span> The Bernoulli Numbers</a></li>
   </ul></li>
-  <li><a href="#nicolaus-i-bernoulli-16871759-extending-the-family-legacy" id="toc-nicolaus-i-bernoulli-16871759-extending-the-family-legacy" class="nav-link" data-scroll-target="#nicolaus-i-bernoulli-16871759-extending-the-family-legacy"><span class="header-section-number">6</span> Nicolaus I Bernoulli (1687–1759): Extending the Family Legacy</a></li>
-  <li><a href="#daniel-bernoulli-17001782-mathematics-meets-physics" id="toc-daniel-bernoulli-17001782-mathematics-meets-physics" class="nav-link" data-scroll-target="#daniel-bernoulli-17001782-mathematics-meets-physics"><span class="header-section-number">7</span> Daniel Bernoulli (1700–1782): Mathematics Meets Physics</a>
+  <li><a href="#johann-bernoulli-1667-1748-the-great-teacher-of-calculus" id="toc-johann-bernoulli-1667-1748-the-great-teacher-of-calculus" class="nav-link" data-scroll-target="#johann-bernoulli-1667-1748-the-great-teacher-of-calculus"><span class="header-section-number">4</span> Johann Bernoulli (1667-1748): The Great Teacher of Calculus</a>
   <ul class="collapse">
-  <li><a href="#early-life-1" id="toc-early-life-1" class="nav-link" data-scroll-target="#early-life-1"><span class="header-section-number">7.1</span> Early Life</a></li>
-  <li><a href="#bernoullis-principle" id="toc-bernoullis-principle" class="nav-link" data-scroll-target="#bernoullis-principle"><span class="header-section-number">7.2</span> Bernoulli’s Principle</a></li>
-  <li><a href="#differential-equations-and-mathematical-physics" id="toc-differential-equations-and-mathematical-physics" class="nav-link" data-scroll-target="#differential-equations-and-mathematical-physics"><span class="header-section-number">7.3</span> Differential Equations and Mathematical Physics</a></li>
-  <li><a href="#contributions-to-probability" id="toc-contributions-to-probability" class="nav-link" data-scroll-target="#contributions-to-probability"><span class="header-section-number">7.4</span> Contributions to Probability</a></li>
+  <li><a href="#rival-and-successor" id="toc-rival-and-successor" class="nav-link" data-scroll-target="#rival-and-successor"><span class="header-section-number">4.1</span> Rival and Successor</a></li>
+  <li><a href="#promotion-of-leibnizian-calculus" id="toc-promotion-of-leibnizian-calculus" class="nav-link" data-scroll-target="#promotion-of-leibnizian-calculus"><span class="header-section-number">4.2</span> Promotion of Leibnizian Calculus</a></li>
+  <li><a href="#the-brachistochrone-problem" id="toc-the-brachistochrone-problem" class="nav-link" data-scroll-target="#the-brachistochrone-problem"><span class="header-section-number">4.3</span> The Brachistochrone Problem</a></li>
   </ul></li>
-  <li><a href="#the-bernoulli-family-and-leonhard-euler" id="toc-the-bernoulli-family-and-leonhard-euler" class="nav-link" data-scroll-target="#the-bernoulli-family-and-leonhard-euler"><span class="header-section-number">8</span> The Bernoulli Family and Leonhard Euler</a></li>
-  <li><a href="#the-basel-problem-a-famous-challenge-in-analysis" id="toc-the-basel-problem-a-famous-challenge-in-analysis" class="nav-link" data-scroll-target="#the-basel-problem-a-famous-challenge-in-analysis"><span class="header-section-number">9</span> The Basel Problem: A Famous Challenge in Analysis</a></li>
-  <li><a href="#the-bernoulli-numbers" id="toc-the-bernoulli-numbers" class="nav-link" data-scroll-target="#the-bernoulli-numbers"><span class="header-section-number">10</span> The Bernoulli Numbers</a></li>
-  <li><a href="#family-rivalries-and-competition" id="toc-family-rivalries-and-competition" class="nav-link" data-scroll-target="#family-rivalries-and-competition"><span class="header-section-number">11</span> Family Rivalries and Competition</a></li>
-  <li><a href="#influence-on-modern-calculus" id="toc-influence-on-modern-calculus" class="nav-link" data-scroll-target="#influence-on-modern-calculus"><span class="header-section-number">12</span> Influence on Modern Calculus</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">13</span> Conclusion</a></li>
-  <li><a href="#the-full-bernoulli-family-tree" id="toc-the-full-bernoulli-family-tree" class="nav-link" data-scroll-target="#the-full-bernoulli-family-tree"><span class="header-section-number">14</span> The full Bernoulli Family Tree</a></li>
+  <li><a href="#nicolaus-i-bernoulli-1687-1759-extending-the-family-legacy" id="toc-nicolaus-i-bernoulli-1687-1759-extending-the-family-legacy" class="nav-link" data-scroll-target="#nicolaus-i-bernoulli-1687-1759-extending-the-family-legacy"><span class="header-section-number">5</span> Nicolaus I Bernoulli (1687-1759): Extending the Family Legacy</a></li>
+  <li><a href="#daniel-bernoulli-1700-1782-mathematics-meets-physics" id="toc-daniel-bernoulli-1700-1782-mathematics-meets-physics" class="nav-link" data-scroll-target="#daniel-bernoulli-1700-1782-mathematics-meets-physics"><span class="header-section-number">6</span> Daniel Bernoulli (1700-1782): Mathematics Meets Physics</a>
+  <ul class="collapse">
+  <li><a href="#early-life-1" id="toc-early-life-1" class="nav-link" data-scroll-target="#early-life-1"><span class="header-section-number">6.1</span> Early Life</a></li>
+  <li><a href="#bernoullis-principle" id="toc-bernoullis-principle" class="nav-link" data-scroll-target="#bernoullis-principle"><span class="header-section-number">6.2</span> Bernoulli’s Principle</a></li>
+  <li><a href="#differential-equations-and-mathematical-physics" id="toc-differential-equations-and-mathematical-physics" class="nav-link" data-scroll-target="#differential-equations-and-mathematical-physics"><span class="header-section-number">6.3</span> Differential Equations and Mathematical Physics</a></li>
+  <li><a href="#contributions-to-probability" id="toc-contributions-to-probability" class="nav-link" data-scroll-target="#contributions-to-probability"><span class="header-section-number">6.4</span> Contributions to Probability</a></li>
+  </ul></li>
+  <li><a href="#the-bernoulli-family-and-leonhard-euler" id="toc-the-bernoulli-family-and-leonhard-euler" class="nav-link" data-scroll-target="#the-bernoulli-family-and-leonhard-euler"><span class="header-section-number">7</span> The Bernoulli Family and Leonhard Euler</a></li>
+  <li><a href="#the-basel-problem-a-famous-challenge-in-analysis" id="toc-the-basel-problem-a-famous-challenge-in-analysis" class="nav-link" data-scroll-target="#the-basel-problem-a-famous-challenge-in-analysis"><span class="header-section-number">8</span> The Basel Problem: A Famous Challenge in Analysis</a>
+  <ul class="collapse">
+  <li><a href="#interactive-watch-the-basel-sum-approach-pi26" id="toc-interactive-watch-the-basel-sum-approach-pi26" class="nav-link" data-scroll-target="#interactive-watch-the-basel-sum-approach-pi26"><span class="header-section-number">8.1</span> Interactive: Watch the Basel Sum Approach <span class="math inline">\(\pi^2/6\)</span></a></li>
+  </ul></li>
+  <li><a href="#family-rivalries-and-competition" id="toc-family-rivalries-and-competition" class="nav-link" data-scroll-target="#family-rivalries-and-competition"><span class="header-section-number">9</span> Family Rivalries and Competition</a></li>
+  <li><a href="#influence-on-modern-calculus" id="toc-influence-on-modern-calculus" class="nav-link" data-scroll-target="#influence-on-modern-calculus"><span class="header-section-number">10</span> Influence on Modern Calculus</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">11</span> Conclusion</a></li>
+  <li><a href="#the-full-bernoulli-family-tree" id="toc-the-full-bernoulli-family-tree" class="nav-link" data-scroll-target="#the-full-bernoulli-family-tree"><span class="header-section-number">12</span> The Full Bernoulli Family Tree</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">13</span> Sources</a></li>
   </ul>
 </nav>
     </div>
@@ -219,28 +261,55 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Group Information
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Group:</strong> Still Thinking <strong>Authors:</strong> Zhang Yang, Zhu Xinbo, Zhang Qixuan</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="asset/bernoulli_jakob.jpg" class="img-fluid figure-img" alt="Portrait of Jacob Bernoulli" width="220"></p>
+<figcaption>Jacob Bernoulli</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="introduction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>The history of calculus is often associated with Isaac Newton and Gottfried Wilhelm Leibniz, who independently developed the fundamental ideas of differential and integral calculus during the seventeenth century. However, the growth of calculus into a powerful mathematical discipline was largely driven by later mathematicians who expanded, applied, and refined these ideas. Among these contributors, no family had a greater influence than the Bernoulli family.</p>
-<p>Originating from Basel, Switzerland, the Bernoullis produced several generations of mathematicians whose work transformed calculus from a new mathematical technique into an essential tool for science and engineering. Their contributions ranged from differential equations and infinite series to probability theory and mathematical physics. The family’s influence extended for more than a century and played a crucial role in establishing many areas of modern mathematics.</p>
-</section>
-<section id="origins-of-the-bernoulli-family" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Origins of the Bernoulli Family</h1>
-<p>The Bernoulli family was originally of Flemish origin. Due to religious persecution, they migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business and public service, several became distinguished mathematicians.</p>
+<p>When people tell the story of calculus, the spotlight usually lands on Isaac Newton and Gottfried Wilhelm Leibniz. Fair enough: they created the first big versions of differential and integral calculus. But if calculus were a new machine, Newton and Leibniz built the prototype. The Bernoulli family helped turn it into a machine that other mathematicians could actually use, repair, argue over, and attach to physics.</p>
+<p>The Bernoullis were a Swiss family from Basel whose mathematical branch produced several major figures across multiple generations. Their work touched differential equations, infinite series, probability, mechanics, fluid dynamics, and the calculus of variations. In other words, they were not just “a family with a few smart people.” They were almost a small research institute, except with more dinner-table tension.</p>
+<p>This story focuses on four central members:</p>
+<ul>
+<li><strong>Jacob Bernoulli</strong>: early master of Leibnizian calculus, probability, infinite series, and Bernoulli numbers.</li>
+<li><strong>Johann Bernoulli</strong>: energetic promoter of calculus, famous teacher, and a key figure in the brachistochrone problem.</li>
+<li><strong>Nicolaus I Bernoulli</strong>: important contributor to probability and the St.&nbsp;Petersburg paradox.</li>
+<li><strong>Daniel Bernoulli</strong>: bridge between calculus, probability, economics, and fluid mechanics.</li>
+</ul>
+<section id="origins-of-the-bernoulli-family" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="origins-of-the-bernoulli-family"><span class="header-section-number">1.1</span> Origins of the Bernoulli Family</h2>
+<p>The Bernoulli family was originally of Flemish origin. Because of religious persecution, the family migrated to Frankfurt and later settled in Basel, Switzerland. Although many family members entered business, law, medicine, and public service, several became distinguished mathematicians.</p>
 <p>The most influential members of the mathematical branch of the family were:</p>
 <ul>
-<li>Jacob Bernoulli (1654–1705)</li>
-<li>Johann Bernoulli (1667–1748)</li>
-<li>Daniel Bernoulli (1700–1782)</li>
-<li>Nicolaus Bernoulli I (1687–1759)</li>
-<li>Nicolaus Bernoulli II (1695–1726)</li>
+<li>Jacob Bernoulli (1655-1705)</li>
+<li>Johann Bernoulli (1667-1748)</li>
+<li>Daniel Bernoulli (1700-1782)</li>
+<li>Nicolaus I Bernoulli (1687-1759)</li>
+<li>Nicolaus II Bernoulli (1695-1726)</li>
 </ul>
 <p>Together, they established one of the most productive mathematical dynasties in history.</p>
-<p>The following is their Family tree of the Basler Bernoullis:</p>
 </section>
-<section id="the-bernoulli-family-tree-of-mathematicians" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> The Bernoulli Family Tree of Mathematicians</h1>
-<p>This includes the family members who made significant contributions to mathematics. You can click the box of the name to access the story of the mathematician if he’s mentioned below. The full famlity tree is given at the end of the website.</p>
+</section>
+<section id="the-bernoulli-family-tree-of-mathematicians" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The Bernoulli Family Tree of Mathematicians</h1>
+<p>The mathematical Bernoullis can be confusing because the same names repeat like variables in a badly labelled proof. Here is the simplified tree for the main people in this story. Clickable boxes jump to the related section.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -248,25 +317,25 @@ window.Quarto = {
 <div>
 <pre class="mermaid mermaid-js">graph TD
 
-N["Niklaus Bernoulli (1623–1708)"]
+N["Niklaus Bernoulli (1623-1708)"]
 
-N --&gt; J1["Jakob I Bernoulli (1654–1705)"]
-N --&gt; N0["Nikolaus Bernoulli (1662–1716)"]
-N --&gt; J2["Johann I Bernoulli (1667–1748)"]
-N --&gt; H0["Hieronymus Bernoulli (1669–1760)"]
+N --&gt; J1["Jacob I Bernoulli (1655-1705)"]
+N --&gt; N0["Nicolaus Bernoulli (1662-1716)"]
+N --&gt; J2["Johann I Bernoulli (1667-1748)"]
+N --&gt; H0["Hieronymus Bernoulli (1669-1760)"]
 
-N0 --&gt; NI["Nikolaus I Bernoulli (1687–1759)"]
+N0 --&gt; NI["Nicolaus I Bernoulli (1687-1759)"]
 
-J2 --&gt; NII["Nikolaus II Bernoulli (1695–1726)"]
-J2 --&gt; D["Daniel Bernoulli (1700–1782)"]
-J2 --&gt; JII["Johann II Bernoulli (1710–1790)"]
+J2 --&gt; NII["Nicolaus II Bernoulli (1695-1726)"]
+J2 --&gt; D["Daniel Bernoulli (1700-1782)"]
+J2 --&gt; JII["Johann II Bernoulli (1710-1790)"]
 
-JII --&gt; JIII["Johann III Bernoulli (1744–1807)"]
-JII --&gt; DII["Daniel II Bernoulli (1751–1834)"]
-JII --&gt; NIII["Nikolaus III Bernoulli (1754–1841)"]
-JII --&gt; JAC2["Jakob II Bernoulli (1759–1789)"]
+JII --&gt; JIII["Johann III Bernoulli (1744-1807)"]
+JII --&gt; DII["Daniel II Bernoulli (1751-1834)"]
+JII --&gt; NIII["Nicolaus III Bernoulli (1754-1841)"]
+JII --&gt; JAC2["Jacob II Bernoulli (1759-1789)"]
 
-click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click J1 "#jacob-bernoulli-1655-1705" "Jacob Bernoulli"
 click J2 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
 click NI "#nicolaus-i-bernoulli-1687-1759" "Nicolaus I Bernoulli"
 click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
@@ -276,189 +345,285 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 </div>
 </div>
 </div>
-<p><a id="jacob-bernoulli-1654-1705"></a></p>
+<p><a id="jacob-bernoulli-1655-1705"></a></p>
 </section>
-<section id="jacob-bernoulli-16541705-pioneer-of-calculus-and-probability" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Jacob Bernoulli (1654–1705): Pioneer of Calculus and Probability</h1>
+<section id="jacob-bernoulli-1655-1705-pioneer-of-calculus-and-probability" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Jacob Bernoulli (1655-1705): Pioneer of Calculus and Probability</h1>
+<div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Jakob_Bernoulli.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Jacob Bernoulli" width="180"></p>
+<p><img src="asset/bernoulli_jakob.jpg" class="img-fluid figure-img" alt="Portrait of Jacob Bernoulli" width="230"></p>
+<figcaption>Jacob Bernoulli</figcaption>
 </figure>
 </div>
-<section id="early-life" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="early-life"><span class="header-section-number">4.1</span> Early Life</h2>
-<p>Jacob Bernoulli was initially expected to study theology, following his family’s wishes. However, he secretly pursued mathematics and astronomy. After learning the newly developed calculus of Leibniz, he quickly became one of its leading advocates.</p>
+</div>
+<section id="early-life" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="early-life"><span class="header-section-number">3.1</span> Early Life</h2>
+<p>Jacob Bernoulli was pushed toward philosophy and theology by his family, but he studied mathematics and astronomy anyway. This is a very Bernoulli move: the family often wanted respectable careers, and the mathematically talented members kept wandering toward calculus like iron filings toward a magnet.</p>
 </section>
-<section id="contributions-to-calculus" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="contributions-to-calculus"><span class="header-section-number">4.2</span> Contributions to Calculus</h2>
-<p>Jacob was among the first mathematicians to understand the potential of Leibniz’s methods. He applied calculus to solve problems involving curves, motion, and geometry.</p>
-<p>One of his most famous achievements was his study of the logarithmic spiral, a curve that fascinated him because it preserved its shape under scaling. He admired the curve so much that he requested it be engraved on his tombstone.</p>
-<p>Jacob also contributed significantly to the theory of infinite series and differential equations. His investigations helped demonstrate the power of calculus for solving complex mathematical problems.</p>
+<section id="contributions-to-calculus" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="contributions-to-calculus"><span class="header-section-number">3.2</span> Contributions to Calculus</h2>
+<p>Jacob became one of the first mathematicians to seriously understand and use Leibniz’s calculus. This mattered because Leibniz’s original papers were powerful but not exactly beginner-friendly. Jacob and Johann were among the people who translated the new notation into actual problem-solving.</p>
+<p>One place Jacob appears directly in calculus courses is the <strong>Bernoulli differential equation</strong>:</p>
+<p><span class="math display">\[
+y' + P(x)y = Q(x)y^n.
+\]</span></p>
+<p>For <span class="math inline">\(n \neq 0,1\)</span>, the clever substitution</p>
+<p><span class="math display">\[
+v = y^{1-n}
+\]</span></p>
+<p>turns it into a linear differential equation. This is a perfect example of what the Bernoullis were good at: taking a messy-looking problem and finding the change of viewpoint that makes it solvable.</p>
 </section>
-<section id="birth-of-probability-theory" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="birth-of-probability-theory"><span class="header-section-number">4.3</span> Birth of Probability Theory</h2>
-<p>Jacob’s posthumously published book <em>Ars Conjectandi</em> (1713) became a foundational text in probability theory. In this work, he established what is now known as the Law of Large Numbers, showing that the observed frequency of an event approaches its theoretical probability as the number of trials increases.</p>
-<p>This result laid the foundation for modern statistics and probabilistic reasoning.</p>
+<section id="birth-of-probability-theory" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="birth-of-probability-theory"><span class="header-section-number">3.3</span> Birth of Probability Theory</h2>
+<p>Jacob also worked on infinite series, the logarithmic spiral, and probability. His book <em>Ars Conjectandi</em>, published after his death in 1713, became one of the founding texts of probability theory. It contains an early form of the <strong>Law of Large Numbers</strong>, the idea that repeated trials settle down toward a stable probability in the long run.</p>
+</section>
+<section id="the-bernoulli-numbers" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="the-bernoulli-numbers"><span class="header-section-number">3.4</span> The Bernoulli Numbers</h2>
+<p>One of Jacob’s most lasting legacies is the sequence now called the <strong>Bernoulli numbers</strong>. They appear in formulas for sums of powers:</p>
+<p><span class="math display">\[
+1^k + 2^k + 3^k + \cdots + n^k.
+\]</span></p>
+<p>For example,</p>
+<p><span class="math display">\[
+1 + 2 + \cdots + n = \frac{n(n+1)}{2},
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}.
+\]</span></p>
+<p>For higher powers, the formulas become more complicated, and Bernoulli numbers help organize them. They later appeared all over analysis, including in the Euler-Maclaurin formula and the study of the Riemann zeta function. That is the strange life of mathematical ideas: Jacob was studying sums of powers, and centuries later his numbers still show up in advanced analysis.</p>
 <p><a id="johann-bernoulli-1667-1748"></a></p>
 </section>
 </section>
-<section id="johann-bernoulli-16671748-the-great-teacher-of-calculus" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Johann Bernoulli (1667–1748): The Great Teacher of Calculus</h1>
+<section id="johann-bernoulli-1667-1748-the-great-teacher-of-calculus" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Johann Bernoulli (1667-1748): The Great Teacher of Calculus</h1>
+<div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Johann_Bernoulli2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Johann Bernoulli" width="180"></p>
+<p><img src="asset/bernoulli_johann.jpg" class="img-fluid figure-img" alt="Portrait of Johann Bernoulli" width="230"></p>
+<figcaption>Johann Bernoulli</figcaption>
 </figure>
 </div>
-<section id="rival-and-successor" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="rival-and-successor"><span class="header-section-number">5.1</span> Rival and Successor</h2>
-<p>Johann Bernoulli, Jacob’s younger brother, learned mathematics largely from Jacob. He soon became a brilliant mathematician in his own right. Their relationship, however, became increasingly competitive, leading to famous disputes over priority and recognition.</p>
+</div>
+<section id="rival-and-successor" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="rival-and-successor"><span class="header-section-number">4.1</span> Rival and Successor</h2>
+<p>Johann Bernoulli was Jacob’s younger brother. He first studied medicine, but Jacob taught him mathematics, and soon Johann became one of the strongest mathematicians in Europe. Their relationship then turned from teacher-student into rivalry. This is the part of the story where mathematics starts to feel less like quiet chalkboards and more like a competitive sport.</p>
 </section>
-<section id="promotion-of-leibnizian-calculus" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="promotion-of-leibnizian-calculus"><span class="header-section-number">5.2</span> Promotion of Leibnizian Calculus</h2>
-<p>Johann played a major role in spreading Leibniz’s notation and methods throughout Europe. His lectures and publications helped establish the notation still used today, including symbols such as:</p>
-<ul>
-<li><span class="math inline">\(\int\)</span> for integration</li>
-<li><span class="math inline">\(d\)</span> for differentiation</li>
-</ul>
-<p>Through his teaching, Johann influenced an entire generation of mathematicians.</p>
+<section id="promotion-of-leibnizian-calculus" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="promotion-of-leibnizian-calculus"><span class="header-section-number">4.2</span> Promotion of Leibnizian Calculus</h2>
+<p>Johann’s biggest historical role was spreading Leibnizian calculus. He taught, published, argued, and promoted the new methods across Europe. Through him, calculus became less of a secret technique and more of a working language.</p>
 </section>
-<section id="the-brachistochrone-problem" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="the-brachistochrone-problem"><span class="header-section-number">5.3</span> The Brachistochrone Problem</h2>
-<p>In 1696 Johann proposed the famous Brachistochrone Problem:</p>
+<section id="the-brachistochrone-problem" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="the-brachistochrone-problem"><span class="header-section-number">4.3</span> The Brachistochrone Problem</h2>
+<p>His most famous challenge was the <strong>brachistochrone problem</strong>:</p>
 <blockquote class="blockquote">
-<p>Given two points at different heights, what path allows a particle to travel between them in the shortest time under gravity?</p>
+<p>Given two points at different heights, what curve lets a particle slide from the upper point to the lower point in the shortest time under gravity?</p>
 </blockquote>
-<p>The challenge attracted solutions from leading mathematicians across Europe, including Newton and Leibniz.</p>
-<p>The solution was a cycloid, not a straight line. This problem became one of the earliest and most important applications of calculus of variations, a field that later influenced mechanics, physics, and optimization theory.</p>
-</section>
-<section id="mentor-to-euler" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="mentor-to-euler"><span class="header-section-number">5.4</span> Mentor to Euler</h2>
-<p>Perhaps Johann’s greatest legacy was teaching the young Leonhard Euler. Under Johann’s guidance, Euler developed into one of the greatest mathematicians in history and further expanded many ideas originating from the Bernoulli family.</p>
+<p>The tempting answer is “a straight line,” but the correct answer is a <strong>cycloid</strong>. This problem helped launch the calculus of variations, where instead of optimizing a number, we optimize an entire curve.</p>
+<p>That shift is important. Ordinary calculus asks questions like:</p>
+<p><span class="math display">\[
+\text{Which } x \text{ minimizes } f(x)?
+\]</span></p>
+<p>The calculus of variations asks something bigger:</p>
+<p><span class="math display">\[
+\text{Which function or path minimizes a whole quantity?}
+\]</span></p>
+<p>This idea later became central in mechanics, optics, optimization, and physics.</p>
 <p><a id="nicolaus-i-bernoulli-1687-1759"></a></p>
 </section>
 </section>
-<section id="nicolaus-i-bernoulli-16871759-extending-the-family-legacy" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Nicolaus I Bernoulli (1687–1759): Extending the Family Legacy</h1>
+<section id="nicolaus-i-bernoulli-1687-1759-extending-the-family-legacy" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Nicolaus I Bernoulli (1687-1759): Extending the Family Legacy</h1>
+<div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Bernoulli_Nicolaus(II).jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Nicolaus Bernoulli (image file labelled II)" width="160"></p>
+<p><img src="asset/bernoulli_nicolaus.jpg" class="img-fluid figure-img" alt="Portrait associated with Nicolaus Bernoulli" width="210"></p>
+<figcaption>Nicolaus Bernoulli</figcaption>
 </figure>
 </div>
-<p>Although overshadowed by his famous relatives, Nicolaus I Bernoulli played an important role in the development of probability theory and mathematical analysis. The son of Nikolaus Bernoulli and nephew of Jacob and Johann Bernoulli, he continued the family’s tradition of mathematical scholarship.</p>
-<p>Nicolaus studied law and mathematics at the University of Basel. His work focused largely on probability, finance, and the application of mathematics to practical problems. He contributed to the early development of mathematical economics and corresponded with many of the leading scholars of his time.</p>
-<p>One of his most famous contributions was his discussion of what later became known as the <strong>St.&nbsp;Petersburg Paradox</strong>, a probability problem involving a lottery with an infinite expected value. The paradox challenged traditional interpretations of expected gain and influenced later developments in probability theory and economics. Daniel Bernoulli would later provide a famous resolution to the paradox through the concept of expected utility.</p>
-<p>Although Nicolaus I did not make discoveries as revolutionary as Jacob or Johann, his work helped maintain the Bernoulli family’s influence in European mathematics during the eighteenth century.</p>
+</div>
+<p>Nicolaus I Bernoulli was the nephew of Jacob and Johann. He studied law and mathematics, and much of his important work appeared through correspondence. His name is strongly connected with the <strong>St.&nbsp;Petersburg paradox</strong>, one of the best historical examples of probability refusing to behave politely.</p>
+<p>The simplified game is this:</p>
+<ol type="1">
+<li>Flip a fair coin until the first head appears.</li>
+<li>If the first head appears on toss <span class="math inline">\(k\)</span>, the payoff is <span class="math inline">\(2^k\)</span>.</li>
+<li>The expected value is</li>
+</ol>
+<p><span class="math display">\[
+\frac12(2)+\frac14(4)+\frac18(8)+\cdots
+=1+1+1+\cdots = \infty.
+\]</span></p>
+<p>So the expected monetary value is infinite. But almost nobody would pay an enormous amount of money to play once. The paradox asks: if the expected value is infinite, why does the game not feel infinitely valuable?</p>
+<p>That question pushed mathematicians to think harder about risk, utility, and human decision-making. It also set up Daniel Bernoulli’s famous response.</p>
 <p><a id="daniel-bernoulli-1700-1782"></a></p>
 </section>
-<section id="daniel-bernoulli-17001782-mathematics-meets-physics" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Daniel Bernoulli (1700–1782): Mathematics Meets Physics</h1>
+<section id="daniel-bernoulli-1700-1782-mathematics-meets-physics" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Daniel Bernoulli (1700-1782): Mathematics Meets Physics</h1>
+<div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Porträt_des_Daniel_Bernoulli_-_edit1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Daniel Bernoulli" width="180"></p>
+<p><img src="asset/bernoulli_daniel.jpg" class="img-fluid figure-img" alt="Portrait of Daniel Bernoulli" width="230"></p>
+<figcaption>Daniel Bernoulli</figcaption>
 </figure>
 </div>
-<section id="early-life-1" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="early-life-1"><span class="header-section-number">7.1</span> Early Life</h2>
-<p>Daniel Bernoulli was Johann’s son and one of the most talented members of the family. Although trained in medicine, his passion remained mathematics and natural philosophy.</p>
+</div>
+<section id="early-life-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="early-life-1"><span class="header-section-number">6.1</span> Early Life</h2>
+<p>Daniel Bernoulli was Johann’s son. He trained in medicine but became deeply involved in mathematics and natural philosophy. His most famous work is <em>Hydrodynamica</em> (1738), where he studied fluid motion using mathematical reasoning.</p>
 </section>
-<section id="bernoullis-principle" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="bernoullis-principle"><span class="header-section-number">7.2</span> Bernoulli’s Principle</h2>
-<p>Daniel is best known for his work in fluid dynamics. In his book <em>Hydrodynamica</em> (1738), he established what is now called Bernoulli’s Principle:</p>
+<section id="bernoullis-principle" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="bernoullis-principle"><span class="header-section-number">6.2</span> Bernoulli’s Principle</h2>
+<p>The result most students recognize is <strong>Bernoulli’s principle</strong>:</p>
 <blockquote class="blockquote">
-<p>As the speed of a fluid increases, its pressure decreases.</p>
+<p>When the speed of a moving fluid increases, its pressure tends to decrease.</p>
 </blockquote>
-<p>This principle explains many physical phenomena, including the lift generated by airplane wings and the operation of various engineering devices.</p>
+<p>In a simplified steady-flow form, this appears as</p>
+<p><span class="math display">\[
+P+\frac12\rho v^2+\rho gh=\text{constant},
+\]</span></p>
+<p>where <span class="math inline">\(P\)</span> is pressure, <span class="math inline">\(\rho\)</span> is density, <span class="math inline">\(v\)</span> is speed, <span class="math inline">\(g\)</span> is gravitational acceleration, and <span class="math inline">\(h\)</span> is height.</p>
 </section>
-<section id="differential-equations-and-mathematical-physics" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="differential-equations-and-mathematical-physics"><span class="header-section-number">7.3</span> Differential Equations and Mathematical Physics</h2>
-<p>Daniel extensively used calculus to model physical systems. His work helped demonstrate how differential equations could describe real-world phenomena such as fluid flow, vibration, and motion.</p>
-<p>This represented an important shift in mathematics: calculus was no longer merely a tool for solving abstract problems but became a language for understanding nature itself.</p>
+<section id="differential-equations-and-mathematical-physics" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="differential-equations-and-mathematical-physics"><span class="header-section-number">6.3</span> Differential Equations and Mathematical Physics</h2>
+<p>This is calculus becoming physics. Instead of treating derivatives and integrals as symbolic exercises, Daniel used mathematical relationships to describe real motion. That spirit is everywhere in modern applied mathematics.</p>
 </section>
-<section id="contributions-to-probability" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="contributions-to-probability"><span class="header-section-number">7.4</span> Contributions to Probability</h2>
-<p>Daniel also studied probability and economics. His analysis of decision-making under uncertainty led to the concept of expected utility, which remains influential in economics and behavioral science today.</p>
+<section id="contributions-to-probability" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="contributions-to-probability"><span class="header-section-number">6.4</span> Contributions to Probability</h2>
+<p>Daniel also gave a famous way to think about the St.&nbsp;Petersburg paradox. His key idea was that people do not value money linearly. Winning an extra dollar matters a lot when you have little money, but it matters much less when you are already rich.</p>
+<p>In modern language, Daniel was thinking in terms of <strong>expected utility</strong> rather than expected money. A common model is logarithmic utility:</p>
+<p><span class="math display">\[
+U(w)=\ln(w).
+\]</span></p>
+<p>The point is not that this exact formula always describes real people. The point is that value depends on context. This idea became important in economics, finance, decision theory, and statistics.</p>
+</section>
+</section>
+<section id="the-bernoulli-family-and-leonhard-euler" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> The Bernoulli Family and Leonhard Euler</h1>
 <p><a id="leonhard-euler-1707-1783"></a></p>
-</section>
-</section>
-<section id="the-bernoulli-family-and-leonhard-euler" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> The Bernoulli Family and Leonhard Euler</h1>
+<div style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Leonhard_Euler_-_Jakob_Emanuel_Handmann_(Kunstmuseum_Basel).jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Leonhard Euler" width="180"></p>
+<p><img src="asset/bernoulli_euler.jpg" class="img-fluid figure-img" alt="Portrait of Leonhard Euler" width="230"></p>
+<figcaption>Leonhard Euler</figcaption>
 </figure>
 </div>
-<p>One of the greatest contributions of the Bernoulli family was their influence on Leonhard Euler (1707–1783), who is widely regarded as one of the greatest mathematicians in history.</p>
+</div>
+<p>One of the greatest contributions of the Bernoulli family was their influence on Leonhard Euler (1707-1783), who is widely regarded as one of the greatest mathematicians in history.</p>
 <p>Euler’s father was a close friend of Johann Bernoulli, and Johann quickly recognized the young Euler’s exceptional talent. Although Euler initially studied theology, Johann encouraged him to pursue mathematics. Through regular meetings and private instruction, Johann introduced Euler to the latest developments in calculus and mathematical analysis.</p>
-<p>Euler later expanded many of the ideas pioneered by the Bernoullis. He developed new methods for solving differential equations, advanced the calculus of variations, and established many of the foundations of modern analysis. In a sense, the Bernoulli family served as a bridge between the invention of calculus by Newton and Leibniz and its later systematic development by Euler.</p>
-<p>The relationship between the Bernoullis and Euler demonstrates how mathematical knowledge is often transmitted through mentorship and collaboration across generations.</p>
+<p>Euler later expanded many of the ideas pioneered by the Bernoullis. He developed new methods for solving differential equations, advanced the calculus of variations, and established many foundations of modern analysis. In a sense, the Bernoulli family served as a bridge between the invention of calculus by Newton and Leibniz and its later systematic development by Euler.</p>
 </section>
-<section id="the-basel-problem-a-famous-challenge-in-analysis" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> The Basel Problem: A Famous Challenge in Analysis</h1>
+<section id="the-basel-problem-a-famous-challenge-in-analysis" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> The Basel Problem: A Famous Challenge in Analysis</h1>
 <p>The city of Basel gave its name to one of the most celebrated problems in the history of mathematics: the Basel Problem.</p>
 <p>The problem asks for the exact value of the infinite series</p>
 <p><span class="math display">\[
 \sum_{n=1}^{\infty}\frac{1}{n^2}
-\]</span></p>
-<p>which begins as</p>
-<p><span class="math display">\[
-1+\frac14+\frac19+\frac1{16}+\cdots.
+= 1+\frac14+\frac19+\frac1{16}+\cdots .
 \]</span></p>
 <p>Jacob Bernoulli first studied this series, and both he and Johann attempted unsuccessfully to determine its exact sum. The problem remained unsolved for several decades and became one of the most famous challenges in mathematics.</p>
 <p>In 1734, Leonhard Euler astonished the mathematical community by proving that</p>
 <p><span class="math display">\[
-\sum_{n=1}^{\infty}\frac{1}{n^2}
-= \frac{\pi^2}{6}.
+\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}.
 \]</span></p>
 <p>This remarkable result connected an infinite series of rational numbers with the geometric constant <span class="math inline">\(\pi\)</span>. Euler’s solution relied heavily on techniques that had emerged from the Bernoulli tradition of studying infinite series and analysis.</p>
-<p>Today, the Basel Problem is regarded as a milestone in the development of mathematical analysis and illustrates the important role that the Bernoulli family played in advancing the study of infinite series.</p>
-</section>
-<section id="the-bernoulli-numbers" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> The Bernoulli Numbers</h1>
-<p>One of the family’s most enduring mathematical legacies is the sequence known as the Bernoulli Numbers.</p>
-<p>These numbers first appeared in Jacob Bernoulli’s investigation of sums of powers:</p>
+<section id="interactive-watch-the-basel-sum-approach-pi26" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="interactive-watch-the-basel-sum-approach-pi26"><span class="header-section-number">8.1</span> Interactive: Watch the Basel Sum Approach <span class="math inline">\(\pi^2/6\)</span></h2>
+<p>Move the slider to see the partial sum</p>
 <p><span class="math display">\[
-1^k + 2^k + \cdots + n^k.
+S_N=\sum_{n=1}^{N}\frac{1}{n^2}
 \]</span></p>
-<p>Bernoulli discovered formulas that expressed these sums in a systematic way, introducing numbers that now bear his name.</p>
-<p>Today, Bernoulli numbers appear in:</p>
+<p>creep toward Euler’s value.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="284" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 283;"><span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>viewof baselTerms <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">500</span>]<span class="op">,</span> {</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Number of terms"</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>baselTarget <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">**</span> <span class="dv">2</span> <span class="op">/</span> <span class="dv">6</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>baselPartialSum <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">length</span><span class="op">:</span> baselTerms }<span class="op">,</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>  (_<span class="op">,</span> index) <span class="kw">=&gt;</span> <span class="dv">1</span> <span class="op">/</span> ((index <span class="op">+</span> <span class="dv">1</span>) <span class="op">**</span> <span class="dv">2</span>)</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>)<span class="op">.</span><span class="fu">reduce</span>((total<span class="op">,</span> term) <span class="kw">=&gt;</span> total <span class="op">+</span> term<span class="op">,</span> <span class="dv">0</span>)</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>baselError <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(baselTarget <span class="op">-</span> baselPartialSum)</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="max-width: 760px; margin: 1rem auto; padding: 1rem; border: 1px solid #999; border-radius: 8px;"&gt;</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;"&gt;</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div&gt;&lt;strong&gt;Partial sum&lt;/strong&gt;&lt;br&gt;</span><span class="sc">${</span>baselPartialSum<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">8</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div&gt;&lt;strong&gt;pi^2 / 6&lt;/strong&gt;&lt;br&gt;</span><span class="sc">${</span>baselTarget<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">8</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div&gt;&lt;strong&gt;Error&lt;/strong&gt;&lt;br&gt;</span><span class="sc">${</span>baselError<span class="op">.</span><span class="fu">toExponential</span>(<span class="dv">3</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="height: 18px; border: 1px solid #777; margin-top: 1rem; background: #eee;"&gt;</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="height: 100%; width: </span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">100</span><span class="op">,</span> (baselPartialSum <span class="op">/</span> baselTarget) <span class="op">*</span> <span class="dv">100</span>)<span class="sc">}</span><span class="vs">%; background: #3b82f6;"&gt;&lt;/div&gt;</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="family-rivalries-and-competition" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Family Rivalries and Competition</h1>
+<p>The Bernoulli family was brilliant, but not exactly calm. Jacob and Johann argued over priority and recognition. Johann later had serious conflict with Daniel, reportedly becoming jealous when Daniel shared a prize with him. This is uncomfortable, but it also makes the history more human.</p>
+<p>Mathematics often appears in textbooks as clean final answers. The actual development is messier: ambition, pride, friendship, mentorship, rivalry, mistakes, and correction all push the subject forward. The Bernoullis are a good reminder that mathematics is made by people, not by perfectly rational theorem-generating machines.</p>
+</section>
+<section id="influence-on-modern-calculus" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Influence on Modern Calculus</h1>
+<p>The Bernoulli story connects directly to topics from calculus:</p>
 <ul>
-<li>Number theory</li>
-<li>Infinite series</li>
-<li>Numerical analysis</li>
-<li>The Euler–Maclaurin formula</li>
-<li>The Riemann zeta function</li>
+<li><strong>Differential equations:</strong> Bernoulli equations and modeling change.</li>
+<li><strong>Infinite series:</strong> the Basel problem and power sums.</li>
+<li><strong>Optimization:</strong> the brachistochrone problem and calculus of variations.</li>
+<li><strong>Applications:</strong> fluid dynamics through Bernoulli’s principle.</li>
+<li><strong>Probability:</strong> the Law of Large Numbers and expected utility.</li>
 </ul>
-<p>Their continued importance demonstrates the lasting impact of Bernoulli’s work on modern mathematics.</p>
+<p>Their work helped transform calculus from a new invention into a flexible language for science. That is why the Bernoulli name keeps appearing in different courses: differential equations, probability, statistics, physics, economics, and numerical analysis.</p>
 </section>
-<section id="family-rivalries-and-competition" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Family Rivalries and Competition</h1>
-<p>The Bernoulli family was famous not only for its mathematical achievements but also for its intense rivalries.</p>
-<p>Jacob and Johann frequently argued over priority for discoveries. After Jacob’s death, Johann continued many of the disputes publicly.</p>
-<p>Later, Johann became jealous of the success of his son Daniel. When Daniel won a scientific prize jointly with him, Johann reportedly became so upset that he refused to speak to his son for some time.</p>
-<p>These conflicts reveal the highly competitive environment in which mathematical discoveries were made during the eighteenth century.</p>
+<section id="conclusion" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Conclusion</h1>
+<p>The Bernoulli family is not just a side note in the history of calculus. Jacob helped develop calculus, series, and probability. Johann spread the new calculus and trained Euler. Nicolaus I pushed probability into strange and important questions. Daniel showed how calculus could describe fluids, risk, and physical systems.</p>
+<p>Together, they helped move calculus from invention to maturity. They also left behind enough family drama to make the story memorable. In a strange way, that combination is perfect: beautiful mathematics, messy humans, and ideas that still show up whenever we study change.</p>
 </section>
-<section id="influence-on-modern-calculus" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Influence on Modern Calculus</h1>
-<p>The Bernoulli family helped transform calculus from a new invention into a mature mathematical discipline.</p>
-<p>Their contributions include:</p>
-<ul>
-<li>Development of differential equations</li>
-<li>Applications of calculus to mechanics</li>
-<li>Foundations of probability theory</li>
-<li>Creation of the calculus of variations</li>
-<li>Advancement of infinite series</li>
-<li>Promotion of Leibnizian notation</li>
-<li>Mathematical modeling of physical phenomena</li>
-</ul>
-<p>Many concepts studied in modern calculus courses trace their origins directly to the work of the Bernoullis.</p>
-</section>
-<section id="conclusion" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Conclusion</h1>
-<p>The Bernoulli family occupies a unique place in the history of mathematics. Across three generations, they produced pioneering research that shaped calculus, probability, differential equations, and mathematical physics. Jacob Bernoulli advanced the foundations of probability and series, Johann Bernoulli spread and expanded calculus throughout Europe, and Daniel Bernoulli demonstrated the power of mathematics in understanding the physical world.</p>
-<p>Their collective achievements influenced mathematicians such as Euler and contributed significantly to the development of modern science. More than three centuries later, concepts bearing the Bernoulli name remain central to mathematics, engineering, economics, and physics. The story of the Bernoulli family is therefore not merely a family history but an important chapter in the evolution of calculus itself.</p>
-</section>
-<section id="the-full-bernoulli-family-tree" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> The full Bernoulli Family Tree</h1>
+<section id="the-full-bernoulli-family-tree" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> The Full Bernoulli Family Tree</h1>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -466,78 +631,78 @@ click D "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 <div>
 <pre class="mermaid mermaid-js">graph LR
 
-N["Niklaus Bernoulli (1623–1708)"]
+N["Niklaus Bernoulli (1623-1708)"]
 
-N --&gt; J1["Jakob I (1655–1705)"]
-N --&gt; N1["Nikolaus (1662–1716)"]
-N --&gt; Jo1["Johann I (1667–1748)"]
-N --&gt; H1["Hieronymus (1669–1760)"]
+N --&gt; J1["Jacob I (1655-1705)"]
+N --&gt; N1["Nicolaus (1662-1716)"]
+N --&gt; Jo1["Johann I (1667-1748)"]
+N --&gt; H1["Hieronymus (1669-1760)"]
 
-N1 --&gt; NI["Nikolaus I (1687–1759)"]
+N1 --&gt; NI["Nicolaus I (1687-1759)"]
 
-Jo1 --&gt; NII["Nikolaus II (1695–1726)"]
-Jo1 --&gt; D1["Daniel (1700–1782)"]
-Jo1 --&gt; J2["Johann II (1710–1790)"]
+Jo1 --&gt; NII["Nicolaus II (1695-1726)"]
+Jo1 --&gt; D1["Daniel (1700-1782)"]
+Jo1 --&gt; J2["Johann II (1710-1790)"]
 
-H1 --&gt; F1["Franz (1705–1777)"]
+H1 --&gt; F1["Franz (1705-1777)"]
 
-J2 --&gt; J3["Johann III (1744–1807)"]
-J2 --&gt; D2["Daniel II (1751–1834)"]
-J2 --&gt; N3["Nikolaus III (1754–1841)"]
-J2 --&gt; Ja2["Jakob II (1759–1789)"]
+J2 --&gt; J3["Johann III (1744-1807)"]
+J2 --&gt; D2["Daniel II (1751-1834)"]
+J2 --&gt; N3["Nicolaus III (1754-1841)"]
+J2 --&gt; Ja2["Jacob II (1759-1789)"]
 
-F1 --&gt; H2["Hieronymus (1735–1786)"]
+F1 --&gt; H2["Hieronymus (1735-1786)"]
 
-J3 --&gt; C1["Christoph (1782–1863)"]
-J3 --&gt; Jos["Johannes (1785–1869)"]
+J3 --&gt; C1["Christoph (1782-1863)"]
+J3 --&gt; Jos["Johannes (1785-1869)"]
 
-D2 --&gt; Leo1["Leonhard (1786–1852)"]
-D2 --&gt; L2["Leonhard (1791–1871)"]
+D2 --&gt; Leo1["Leonhard (1786-1852)"]
+D2 --&gt; L2["Leonhard (1791-1871)"]
 
-N3 --&gt; N4["Nikolaus (1793–1876)"]
+N3 --&gt; N4["Nicolaus (1793-1876)"]
 
-H2 --&gt; JJ1["Johann Jacob (1769–1853)"]
+H2 --&gt; JJ1["Johann Jacob (1769-1853)"]
 
-C1 --&gt; Car1["Carl Christoph (1809–1884)"]
+C1 --&gt; Car1["Carl Christoph (1809-1884)"]
 
-Jos --&gt; Kar1["Carl Johann (1835–1906)"]
+Jos --&gt; Kar1["Carl Johann (1835-1906)"]
 
-Leo1 --&gt; Edu1["Eduard (1819–1899)"]
+Leo1 --&gt; Edu1["Eduard (1819-1899)"]
 
-L2 --&gt; Aug1["August (1839–1921)"]
-L2 --&gt; Fritz["Fritz (1824–1913)"]
+L2 --&gt; Aug1["August (1839-1921)"]
+L2 --&gt; Fritz["Fritz (1824-1913)"]
 
-N4 --&gt; Theo["Theodor (1837–1909)"]
+N4 --&gt; Theo["Theodor (1837-1909)"]
 
-JJ1 --&gt; JJ2["Johann Jacob (1802–1892)"]
-JJ1 --&gt; Franz2["Franz (1813–1850)"]
+JJ1 --&gt; JJ2["Johann Jacob (1802-1892)"]
+JJ1 --&gt; Franz2["Franz (1813-1850)"]
 
-Car1 --&gt; CaC["Carl Christoph (1861–1923)"]
+Car1 --&gt; CaC["Carl Christoph (1861-1923)"]
 
-Kar1 --&gt; CaA["Carl Albrecht (1868–1937)"]
+Kar1 --&gt; CaA["Carl Albrecht (1868-1937)"]
 
-Edu1 --&gt; Edu2["Eduard (1867–1927)"]
+Edu1 --&gt; Edu2["Eduard (1867-1927)"]
 
-Aug1 --&gt; AL["August Leonhard (1879–1939)"]
-Aug1 --&gt; Maria["Maria (1868–1963)"]
+Aug1 --&gt; AL["August Leonhard (1879-1939)"]
+Aug1 --&gt; Maria["Maria (1868-1963)"]
 
-Theo --&gt; Rud["Rudolf (1880–1948)"]
+Theo --&gt; Rud["Rudolf (1880-1948)"]
 
-JJ2 --&gt; JJ3["Johann Jakob (1831–1913)"]
-JJ2 --&gt; CaG["Carl Gustav (1834–1878)"]
-JJ2 --&gt; Ernst["Ernst (1846–1931)"]
+JJ2 --&gt; JJ3["Johann Jakob (1831-1913)"]
+JJ2 --&gt; CaG["Carl Gustav (1834-1878)"]
+JJ2 --&gt; Ernst["Ernst (1846-1931)"]
 
-Franz2 --&gt; Eli["Elisabeth (1873–1935)"]
-Franz2 --&gt; Hans["Hans (1876–1959)"]
+Franz2 --&gt; Eli["Elisabeth (1873-1935)"]
+Franz2 --&gt; Hans["Hans (1876-1959)"]
 
-CaC --&gt; Christoph["Christoph (1897–1981)"]
-CaA --&gt; Eva["Eva (1903–1995)"]
-JJ3 --&gt; Lucas["Lucas (1907–1976)"]
-Ernst --&gt; Eugen["Eugen (1882–1983)"]
+CaC --&gt; Christoph["Christoph (1897-1981)"]
+CaA --&gt; Eva["Eva (1903-1995)"]
+JJ3 --&gt; Lucas["Lucas (1907-1976)"]
+Ernst --&gt; Eugen["Eugen (1882-1983)"]
 
 Lucas --&gt; Cornelia["Cornelia Bernoulli (b. 1954)"]
 
-click J1 "#jacob-bernoulli-1654-1705" "Jacob Bernoulli"
+click J1 "#jacob-bernoulli-1655-1705" "Jacob Bernoulli"
 click Jo1 "#johann-bernoulli-1667-1748" "Johann Bernoulli"
 click NI "#nicolaus-i-bernoulli-1687-1759" "Nicolaus I Bernoulli"
 click D1 "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
@@ -547,11 +712,32 @@ click D1 "#daniel-bernoulli-1700-1782" "Daniel Bernoulli"
 </div>
 </div>
 </div>
+</section>
+<section id="sources" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Sources</h1>
+<ul>
+<li>MacTutor History of Mathematics Archive, <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/">Jacob Bernoulli</a></li>
+<li>MacTutor History of Mathematics Archive, <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann/">Johann Bernoulli</a></li>
+<li>MacTutor History of Mathematics Archive, <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Daniel/">Daniel Bernoulli</a></li>
+<li>MacTutor History of Mathematics Archive, <a href="https://mathshistory.st-andrews.ac.uk/Diagrams/Bernoulli_family.gif">Bernoulli family tree</a></li>
+<li>Encyclopaedia Britannica, <a href="https://www.britannica.com/topic/Bernoulli-family">Bernoulli family</a></li>
+</ul>
 
 
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBiYXNlbFRlcm1zID0gSW5wdXRzLnJhbmdlKFsxLCA1MDBdLCB7XG4gIHZhbHVlOiAyMCxcbiAgc3RlcDogMSxcbiAgbGFiZWw6IFwiTnVtYmVyIG9mIHRlcm1zXCJcbn0pXG5cbmJhc2VsVGFyZ2V0ID0gTWF0aC5QSSAqKiAyIC8gNlxuXG5iYXNlbFBhcnRpYWxTdW0gPSBBcnJheS5mcm9tKFxuICB7IGxlbmd0aDogYmFzZWxUZXJtcyB9LFxuICAoXywgaW5kZXgpID0+IDEgLyAoKGluZGV4ICsgMSkgKiogMilcbikucmVkdWNlKCh0b3RhbCwgdGVybSkgPT4gdG90YWwgKyB0ZXJtLCAwKVxuXG5iYXNlbEVycm9yID0gTWF0aC5hYnMoYmFzZWxUYXJnZXQgLSBiYXNlbFBhcnRpYWxTdW0pXG5cbmh0bWxgXG4gIDxkaXYgc3R5bGU9XCJtYXgtd2lkdGg6IDc2MHB4OyBtYXJnaW46IDFyZW0gYXV0bzsgcGFkZGluZzogMXJlbTsgYm9yZGVyOiAxcHggc29saWQgIzk5OTsgYm9yZGVyLXJhZGl1czogOHB4O1wiPlxuICAgIDxkaXYgc3R5bGU9XCJkaXNwbGF5OiBncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgbWlubWF4KDE4MHB4LCAxZnIpKTsgZ2FwOiAwLjc1cmVtO1wiPlxuICAgICAgPGRpdj48c3Ryb25nPlBhcnRpYWwgc3VtPC9zdHJvbmc+PGJyPiR7YmFzZWxQYXJ0aWFsU3VtLnRvRml4ZWQoOCl9PC9kaXY+XG4gICAgICA8ZGl2PjxzdHJvbmc+cGleMiAvIDY8L3N0cm9uZz48YnI+JHtiYXNlbFRhcmdldC50b0ZpeGVkKDgpfTwvZGl2PlxuICAgICAgPGRpdj48c3Ryb25nPkVycm9yPC9zdHJvbmc+PGJyPiR7YmFzZWxFcnJvci50b0V4cG9uZW50aWFsKDMpfTwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgc3R5bGU9XCJoZWlnaHQ6IDE4cHg7IGJvcmRlcjogMXB4IHNvbGlkICM3Nzc7IG1hcmdpbi10b3A6IDFyZW07IGJhY2tncm91bmQ6ICNlZWU7XCI+XG4gICAgICA8ZGl2IHN0eWxlPVwiaGVpZ2h0OiAxMDAlOyB3aWR0aDogJHtNYXRoLm1pbigxMDAsIChiYXNlbFBhcnRpYWxTdW0gLyBiYXNlbFRhcmdldCkgKiAxMDApfSU7IGJhY2tncm91bmQ6ICMzYjgyZjY7XCI+PC9kaXY+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuYFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdiYXNlbFRlcm1zJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

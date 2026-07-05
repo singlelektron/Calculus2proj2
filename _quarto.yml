@@ -1,14 +1,15 @@
 project:
   type: website
   output-dir: _site
-
+  render:
+    - bernoulli.qmd
 website:
   title: "The Bernoulli Family: A Mathematical Legacy"
   navbar:
     left:
       - href: bernoulli.qmd
         text: Home
-      - href: bernoulli.qmd#jacob-bernoulli-1654-1705
+      - href: bernoulli.qmd#jacob-bernoulli-1655-1705
         text: Jacob
       - href: bernoulli.qmd#johann-bernoulli-1667-1748
         text: Johann
