@@ -14,8 +14,10 @@ output-file: index
 - Zhu Xinbo MAT2509040
 - Zhang Qixuan MAT2509034
 
-<div style="text-align: center;">
-![Jacob Bernoulli](asset/bernoulli_jakob.jpg){width="220" fig-alt="Portrait of Jacob Bernoulli"}
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+![Yang Bernoulli](asset/member1.png){width="210" fig-alt="Portrait associated with group member Zhang Yang"}
+![Xinbo Bernoulli](asset/member2.png){width="210" fig-alt="Portrait associated with group member Zhu Xinbo"}
+![Qixuan Bernoulli](asset/member3.jpg){width="210" fig-alt="Portrait associated with group member Zhang Qixuan"}
 </div>
 
 :::
